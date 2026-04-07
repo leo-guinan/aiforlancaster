@@ -1,6 +1,26 @@
+# System
 .DS_Store
 *.DS_Store
-node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
 .env
 .env.local
+
+# Logs
 *.log
+
+# Data snapshots — local only, not part of the fork template
+data/trends/
+
+# Banner working files — only keep final
+yt-banner-v1.png
+yt-banner-v2.png
+yt-banner-v3.png
+yt-banner-v4.png
+yt-banner-bg.png
+
+# Node
+node_modules/

@@ -7,8 +7,8 @@ A step-by-step guide to forking this book and site for your own community.
 ## What You're Getting
 
 This repository contains:
-- A complete book manuscript (~30,000 words) about AI for small business
-- A website with 6 pillar content guides (2,000+ words each)
+- A complete book manuscript (~40,000 words) about AI for small business
+- A website with 27+ guide pages covering specific industries and use cases
 - A prompt library, tool comparison charts, and audit worksheets
 - Cover design templates
 - Deployment configs for static hosting
@@ -91,8 +91,12 @@ We use Cloudflare Pages (free tier is plenty):
 
 1. Create a Cloudflare account at cloudflare.com
 2. Buy your domain: aifor[yourtown].com (~$10/year)
-3. Connect your GitHub repo to Cloudflare Pages
-4. The site auto-deploys on every push
+3. Install wrangler: `npm install -g wrangler` then `wrangler login`
+4. Build the site: `python3 scripts/build_site.py`
+5. Deploy: `npx wrangler pages deploy ./deploy --project-name=ai-for-yourtown`
+6. On every future update, rebuild and redeploy
+
+See `scripts/README.md` for the full pipeline including the daily guide generator and trends agent.
 
 The site structure is pre-built. You just need to:
 - Update town references in the HTML/markdown
