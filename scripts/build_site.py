@@ -556,6 +556,172 @@ def patch_existing_page(path):
     return src
 
 
+def make_sitemap(all_guides):
+    """Generate sitemap.xml for the full site."""
+    today = datetime.now().strftime('%Y-%m-%d')
+    urls = []
+
+    def url(loc, priority, changefreq):
+        return f'''  <url>
+    <loc>{loc}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
+  </url>'''
+
+    urls.append(url('https://www.aiforlancaster.com/', '1.0', 'weekly'))
+    urls.append(url('https://www.aiforlancaster.com/guides/', '0.9', 'daily'))
+    urls.append(url('https://www.aiforlancaster.com/audit/', '0.8', 'monthly'))
+    urls.append(url('https://www.aiforlancaster.com/prompts/', '0.8', 'monthly'))
+    urls.append(url('https://www.aiforlancaster.com/call/', '0.7', 'monthly'))
+
+    for g in sorted(all_guides, key=lambda x: x.get('date', ''), reverse=True):
+        urls.append(url(
+            f"https://www.aiforlancaster.com/guides/{g['slug']}/",
+            '0.8', 'monthly'
+        ))
+
+    return f'''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>'''
+
+
+def build_link_index(all_guides):
+    """
+    Build an index of specific anchor phrases -> guide URL.
+    Only uses the distinctive noun phrase from each guide title,
+    not generic words like "small business" or "for business".
+    Max 1 link per target guide per page, max 4 auto-links per page total.
+    """
+    # Hand-tuned distinctive phrases per guide slug.
+    # These are phrases that are specific enough to link without false matches.
+    ANCHOR_PHRASES = {
+        'ai-voice-agents-small-business':       ['voice agent', 'voice agents', 'AI voice agent'],
+        'ai-automation-small-business':          ['Zapier', 'Make.com', 'workflow automation', 'automate your'],
+        'ai-customer-service-small-business':    ['AI customer service', 'customer service chatbot'],
+        'ai-marketing-small-business':           ['AI marketing', 'marketing automation'],
+        'ai-social-media-small-business':        ['social media content', 'batch.*content', 'content batching'],
+        'ai-email-tools-small-business':         ['email automation', 'AI email', 'email drafting'],
+        'ai-for-accounting-bookkeeping':         ['QuickBooks', 'bookkeeping', 'accounting software'],
+        'ai-for-restaurants':                    ['restaurant', 'reservation', 'menu optimization'],
+        'ai-for-retail-stores':                  ['retail', 'inventory management', 'product description'],
+        'ai-for-contractors':                    ['contractor', 'estimate', 'job site'],
+        'ai-for-law-offices':                    ['law office', 'legal AI', 'client intake'],
+        'ai-for-medical-offices':                ['HIPAA', 'medical office', 'dental office', 'appointment reminder'],
+        'ai-for-real-estate-agents':             ['real estate', 'listing description', 'lead nurture'],
+        'ai-for-home-services':                  ['HVAC', 'plumbing', 'home service'],
+        'ai-for-salons-spas':                    ['salon', 'spa', 'rebooking'],
+        'ai-for-nonprofits':                     ['nonprofit', 'grant writing'],
+        'ai-for-auto-shops':                     ['auto shop', 'repair shop', 'mechanic'],
+        'ai-scheduling-tools':                   ['Calendly', 'Acuity', 'online booking', 'appointment booking'],
+        'best-ai-phone-answering-service':       ['phone answering', 'AI receptionist', 'answer.*phone'],
+        'chatgpt-vs-claude-vs-gemini-small-business': ['ChatGPT vs', 'Claude vs', 'which AI tool'],
+        'how-to-use-chatgpt-for-business':       ['prompt framework', 'how to use ChatGPT', 'custom instruction'],
+        'ai-tools-comparison-2025':              ['AI tools comparison', 'compare AI tools'],
+        'ai-tools-free-tier-guide':              ['free tier', 'free version of', 'without paying'],
+        'ai-content-marketing-local-business':   ['local SEO', 'rank.*locally', 'Google Business Profile'],
+        'what-is-ai-small-business':             ['what AI actually is', 'AI explained', 'how AI works'],
+        'hire-ai-consultant-without-getting-burned': ['hire.*consultant', 'red flag', 'AI consultant'],
+        'how-to-audit-business-for-ai':          ['AI audit', 'audit your business', 'find AI opportunities'],
+        'ai-for-insurance-agents':               ['insurance agent', 'policy document'],
+        'ai-for-gyms-fitness':                   ['gym', 'fitness studio', 'personal trainer'],
+        'ai-for-childcare':                      ['childcare', 'daycare'],
+        'ai-for-pet-services':                   ['pet service', 'veterinary', 'grooming'],
+    }
+    # Build slug -> [(regex_pattern, url), ...]
+    index = {}
+    for g in all_guides:
+        slug = g['slug']
+        url = f'/guides/{slug}/'
+        phrases = ANCHOR_PHRASES.get(slug, [])
+        patterns = []
+        for phrase in phrases:
+            # Build case-insensitive regex
+            try:
+                pat = re.compile(r'\b(' + phrase + r')\b', re.IGNORECASE)
+                patterns.append((pat, url))
+            except re.error:
+                pass
+        if patterns:
+            index[slug] = patterns
+    return index
+
+
+def autolink_body(html_body, current_slug, link_index, max_links=4):
+    """
+    Insert internal links into guide body HTML.
+    Rules:
+    - Skip the current guide's own patterns
+    - Max 1 link per target guide
+    - Max max_links total auto-links per page
+    - Never link inside existing <a> tags
+    - Never link inside <h1>/<h2>/<h3> tags
+    - First occurrence only
+    """
+    # Pre-populate already-linked slugs from existing <a href="/guides/..."> in the HTML
+    linked_slugs = set(re.findall(r'href="/guides/([^/]+)/', html_body))
+    link_count = [0]
+
+    def replacer(match, url):
+        if link_count[0] >= max_links:
+            return match.group(0)
+        link_count[0] += 1
+        return f'<a href="{url}">{match.group(0)}</a>'
+
+    # Split on tags we don't want to touch, process text nodes only
+    # Strategy: split HTML into segments, only process text outside <a>, <h1-3> tags
+    def process_segment(seg, slug, pat, url):
+        """Apply one pattern to one text segment, first occurrence only."""
+        return pat.sub(lambda m: replacer(m, url), seg, count=1)
+
+    # Parse out tag vs text segments
+    TAG_RE = re.compile(r'(<[^>]+>)')
+    segments = TAG_RE.split(html_body)
+
+    in_anchor = False
+    in_heading = False
+    result = []
+
+    for seg in segments:
+        if seg.startswith('<'):
+            tag_lower = seg.lower()
+            if re.match(r'<a[\s>]', tag_lower):
+                in_anchor = True
+            elif tag_lower.startswith('</a'):
+                in_anchor = False
+            elif re.match(r'<h[123][\s>]', tag_lower):
+                in_heading = True
+            elif re.match(r'</h[123]', tag_lower):
+                in_heading = False
+            result.append(seg)
+        else:
+            if in_anchor or in_heading or link_count[0] >= max_links:
+                result.append(seg)
+                continue
+            # Try each guide's patterns
+            current_seg = seg
+            for slug, patterns in link_index.items():
+                if slug == current_slug:
+                    continue
+                if slug in linked_slugs:
+                    continue
+                if link_count[0] >= max_links:
+                    break
+                for pat, url in patterns:
+                    m = pat.search(current_seg)
+                    if m:
+                        current_seg = pat.sub(
+                            lambda match, u=url: replacer(match, u),
+                            current_seg, count=1
+                        )
+                        linked_slugs.add(slug)
+                        break
+            result.append(current_seg)
+
+    return ''.join(result)
+
+
 def main():
     # 1. Write shared stylesheet
     (DEPLOY / 'style.css').write_text(SHARED_CSS)
@@ -580,27 +746,36 @@ def main():
 
     print(f'Found {len(all_guides)} guide files')
 
-    # 3. Build each guide HTML page
+    # 3. Build auto-link index (specific phrases -> guide URLs)
+    link_index = build_link_index(all_guides)
+    print(f'Built link index ({len(link_index)} guides with anchor phrases)')
+
+    # 4. Build each guide HTML page
     guides_deploy = DEPLOY / 'guides'
     guides_deploy.mkdir(exist_ok=True)
+    total_links = 0
     for g in all_guides:
         body_html = md_to_html(g['body'])
+        body_html = autolink_body(body_html, g['slug'], link_index)
+        # Count links inserted (rough)
+        total_links += body_html.count('href="/guides/')
         html = build_guide_html(g['meta'], body_html, g['slug'], all_guides)
         out_dir = guides_deploy / g['slug']
         out_dir.mkdir(exist_ok=True)
         (out_dir / 'index.html').write_text(html)
         print(f'  Built /guides/{g["slug"]}/')
+    print(f'  ({total_links} internal links inserted across all guides)')
 
-    # 4. Build guides index
+    # 5. Build guides index
     (guides_deploy / 'index.html').write_text(build_guides_index(all_guides))
     print('Built /guides/')
 
-    # 5. Rebuild homepage with guides section + nav + Fathom
+    # 6. Rebuild homepage with guides section + nav + Fathom
     homepage = build_homepage(all_guides)
     (DEPLOY / 'index.html').write_text(homepage)
     print('Rebuilt index.html')
 
-    # 6. Patch existing pages (audit, call, prompts, 404)
+    # 7. Patch existing pages (audit, call, prompts, 404)
     for p in [DEPLOY / 'audit' / 'index.html',
                DEPLOY / 'call' / 'index.html',
                DEPLOY / 'prompts' / 'index.html',
@@ -609,7 +784,12 @@ def main():
             p.write_text(patch_existing_page(p))
             print(f'  Patched {p.relative_to(DEPLOY)}')
 
-    # 7. Write a manifest of all guides (used by cron)
+    # 8. Generate and write sitemap.xml
+    sitemap = make_sitemap(all_guides)
+    (DEPLOY / 'sitemap.xml').write_text(sitemap)
+    print(f'Wrote sitemap.xml ({len(all_guides) + 5} URLs)')
+
+    # 9. Write a manifest of all guides (used by cron)
     manifest = [{'slug': g['slug'], 'title': g['title'], 'date': g['date']} for g in all_guides]
     (SITE_ROOT / 'site' / 'guides-manifest.json').write_text(json.dumps(manifest, indent=2))
     print(f'Wrote guides-manifest.json ({len(manifest)} guides)')
