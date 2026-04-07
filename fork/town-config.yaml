@@ -1,0 +1,58 @@
+# AI for [Town] Configuration
+# This file is the single source of truth for your local version.
+# Edit this first, then use it as reference when localizing content.
+
+# Your town
+town: Lancaster
+state: Ohio
+county: Fairfield County
+population: ~40000
+
+# Your site
+domain: aiforlancaster.com
+github_repo: github.com/leoguinan/ai-for-lancaster
+
+# Author
+author: Leo Guinan
+author_email: leo@metaspn.com
+author_bio: >
+  Founder of MetaSPN. Builds AI systems. Lives in Lancaster, Ohio.
+  Prediction track record: 42%. Publishes his misses.
+
+# Local resources (update these for your town)
+chamber_of_commerce:
+  name: Lancaster Fairfield County Chamber of Commerce
+  phone: "740.653.8251"
+  url: https://www.lancasterohio.org/
+
+local_resources:
+  - name: SCORE Central Ohio
+    type: free business mentoring
+    url: https://centralohio.score.org/
+  - name: OSU Extension - Fairfield County
+    type: business education
+    address: 831 College Ave, Lancaster, OH
+  - name: Ohio SBDC
+    type: small business development
+    url: https://www.ohiosbdc.org/
+  - name: OhioMeansJobs Fairfield County
+    type: workforce development
+    url: https://ohiomeansjobs.ohio.gov/
+
+# Network membership
+joined_network: 2025-04-06
+node_status: active
+mothership: true
+
+# Local business verticals (customize for your town's economy)
+key_verticals:
+  - HVAC and plumbing contractors
+  - Restaurants and food trucks
+  - Professional services (attorneys, accountants)
+  - Retail shops
+  - Healthcare and wellness
+  - Skilled trades
+
+# Cover photo
+cover_image: images/lancaster-main-street.jpg
+cover_credit: "Photo by Leo Guinan, Main Street, Lancaster, Ohio"

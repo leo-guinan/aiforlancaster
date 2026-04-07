@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560" width="1600" height="2560">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800');
+
+      .pre-title {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 72px;
+        fill: #B8C4D0;
+        letter-spacing: 12px;
+      }
+      .hero-title {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 156px;
+        fill: #F5F0E8;
+        letter-spacing: 6px;
+      }
+      .subtitle {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 42px;
+        fill: #B8C4D0;
+        letter-spacing: 2px;
+      }
+      .author {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        fill: #D4A843;
+        letter-spacing: 10px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background: Dark Navy -->
+  <rect width="1600" height="2560" fill="#1B2838"/>
+
+  <!-- Subtle top accent line -->
+  <rect x="0" y="0" width="1600" height="3" fill="#D4A843" opacity="0.4"/>
+
+  <!-- "AI for" pre-title -->
+  <text x="800" y="780" text-anchor="middle" class="pre-title">AI for</text>
+
+  <!-- "MAIN STREET" hero text — visual anchor -->
+  <text x="800" y="960" text-anchor="middle" class="hero-title">MAIN STREET</text>
+
+  <!-- Gold accent rule below title -->
+  <rect x="520" y="1010" width="560" height="3" fill="#D4A843"/>
+
+  <!-- Subtitle line 1 -->
+  <text x="800" y="1130" text-anchor="middle" class="subtitle">A No-Hype Guide for</text>
+
+  <!-- Subtitle line 2 -->
+  <text x="800" y="1190" text-anchor="middle" class="subtitle">Lancaster Small Business Owners</text>
+
+  <!-- Minimal storefront silhouette — geometric, very subtle -->
+  <g transform="translate(800, 1650)" opacity="0.15">
+    <!-- Left building -->
+    <rect x="-150" y="-70" width="60" height="70" fill="#D4A843"/>
+    <rect x="-142" y="-30" width="16" height="24" fill="#1B2838"/>
+    <rect x="-118" y="-30" width="16" height="24" fill="#1B2838"/>
+    <rect x="-142" y="-62" width="16" height="20" fill="#1B2838"/>
+    <rect x="-118" y="-62" width="16" height="20" fill="#1B2838"/>
+
+    <!-- Center-left building with peaked roof -->
+    <rect x="-80" y="-55" width="70" height="55" fill="#D4A843"/>
+    <polygon points="-80,-55 -45,-80 -10,-55" fill="#D4A843"/>
+    <rect x="-66" y="-40" width="14" height="18" fill="#1B2838"/>
+    <rect x="-44" y="-40" width="14" height="18" fill="#1B2838"/>
+    <rect x="-58" y="-12" width="26" height="16" fill="#1B2838" rx="1"/>
+
+    <!-- Center building — main storefront -->
+    <rect x="-2" y="-60" width="80" height="60" fill="#D4A843"/>
+    <rect x="8" y="-15" width="26" height="18" fill="#1B2838" rx="1"/>
+    <rect x="42" y="-15" width="26" height="18" fill="#1B2838" rx="1"/>
+    <rect x="14" y="-50" width="48" height="22" fill="#1B2838"/>
+    <!-- Awning -->
+    <polygon points="6,-28 70,-28 74,-22 2,-22" fill="#A8883A"/>
+
+    <!-- Right building -->
+    <rect x="88" y="-50" width="55" height="50" fill="#D4A843"/>
+    <rect x="96" y="-38" width="14" height="16" fill="#1B2838"/>
+    <rect x="120" y="-38" width="14" height="16" fill="#1B2838"/>
+    <rect x="104" y="-14" width="20" height="16" fill="#1B2838" rx="1"/>
+
+    <!-- Street line -->
+    <rect x="-160" y="2" width="320" height="1" fill="#D4A843"/>
+  </g>
+
+  <!-- Thin gold rule above author name -->
+  <rect x="650" y="2200" width="300" height="1.5" fill="#D4A843" opacity="0.5"/>
+
+  <!-- Author name -->
+  <text x="800" y="2280" text-anchor="middle" class="author">LEO GUINAN</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="2557" width="1600" height="3" fill="#D4A843" opacity="0.4"/>
+</svg>

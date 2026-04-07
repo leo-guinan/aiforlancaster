@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get 50 customized AI prompts for your small business. Free. From the book AI for Main Street.">
+  <meta name="author" content="Leo Guinan">
+  <title>AI Prompt Generator — AI for Main Street</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #0a0a0a;
+      color: #d4d4d4;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container { max-width: 700px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      padding: 48px 0 32px;
+      text-align: center;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    header h1 {
+      font-size: 1.8em;
+      color: #f0f0f0;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    header .subtitle {
+      color: #888;
+      font-size: 1em;
+    }
+    header .book-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #D4A843;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    header .book-link:hover { text-decoration: underline; }
+
+    /* Form Section */
+    .form-section {
+      padding: 40px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .form-section h2 {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      margin-bottom: 8px;
+    }
+    .form-section .instructions {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85em;
+      color: #b0b0b0;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .form-group .hint {
+      font-size: 0.8em;
+      color: #666;
+      margin-top: 4px;
+    }
+    .required { color: #D4A843; }
+    .optional { color: #555; font-weight: 400; }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      color: #e0e0e0;
+      font-size: 1em;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: #D4A843;
+    }
+
+    .generate-btn {
+      display: block;
+      width: 100%;
+      padding: 14px 24px;
+      background: #f0f0f0;
+      color: #0a0a0a;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .generate-btn:hover { background: #D4A843; color: #0a0a0a; }
+    .generate-btn:disabled { background: #333; color: #666; cursor: not-allowed; }
+
+    /* Results */
+    .results-section {
+      padding: 40px 0;
+      display: none;
+    }
+    .results-section.visible { display: block; }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .results-header h2 {
+      font-size: 1.2em;
+      color: #e0e0e0;
+    }
+    .copy-all-btn {
+      padding: 8px 16px;
+      background: transparent;
+      border: 1px solid #D4A843;
+      color: #D4A843;
+      border-radius: 4px;
+      font-size: 0.85em;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .copy-all-btn:hover { background: #D4A843; color: #0a0a0a; }
+
+    .category-header {
+      font-size: 1em;
+      color: #D4A843;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .prompt-card {
+      background: #111;
+      border: 1px solid #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .prompt-card .prompt-title {
+      font-size: 0.85em;
+      color: #b0b0b0;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .prompt-card .prompt-text {
+      font-size: 0.9em;
+      color: #d4d4d4;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      font-family: 'SF Mono', Monaco, 'Cascadia Mono', monospace;
+      background: #0a0a0a;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #1a1a1a;
+    }
+    .prompt-card .copy-btn {
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: transparent;
+      border: 1px solid #333;
+      color: #888;
+      border-radius: 4px;
+      font-size: 0.8em;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .prompt-card .copy-btn:hover { border-color: #D4A843; color: #D4A843; }
+    .prompt-card .copy-btn.copied { border-color: #4a4; color: #4a4; }
+
+    .prompt-card .remaining-bracket {
+      color: #D4A843;
+      font-weight: 600;
+    }
+
+    /* CTA at bottom */
+    .cta-section {
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+      display: none;
+    }
+    .cta-section.visible { display: block; }
+    .cta-section p { color: #888; margin-bottom: 12px; font-size: 0.9em; }
+    .cta-section a { color: #D4A843; text-decoration: none; }
+    .cta-section a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      padding: 24px 0;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+      color: #444;
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4em; }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>AI Prompt Generator</h1>
+      <p class="subtitle">50 customized prompts for your business. Free.</p>
+      <a href="#" class="book-link">From the book "AI for Main Street" by Leo Guinan</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="form-section">
+        <h2>Tell me about your business</h2>
+        <p class="instructions">Fill in a few details. I'll customize all 50 prompts from the book for your specific business. Takes about 60 seconds.</p>
+
+        <form id="business-form">
+          <div class="form-group">
+            <label>What type of business do you run? <span class="required">*</span></label>
+            <input type="text" id="biz-type" placeholder="e.g., HVAC company, dental office, hair salon, restaurant" required>
+          </div>
+
+          <div class="form-group">
+            <label>Business name <span class="required">*</span></label>
+            <input type="text" id="biz-name" placeholder="e.g., Accurate Heating & Cooling" required>
+          </div>
+
+          <div class="form-group">
+            <label>City and state <span class="required">*</span></label>
+            <input type="text" id="biz-location" placeholder="e.g., Lancaster, Ohio" required>
+          </div>
+
+          <div class="form-group">
+            <label>Your phone number <span class="optional">(optional — used in prompts)</span></label>
+            <input type="text" id="biz-phone" placeholder="e.g., 740-555-1234">
+          </div>
+
+          <div class="form-group">
+            <label>Your email <span class="required">*</span></label>
+            <input type="email" id="biz-email" placeholder="you@yourbusiness.com" required>
+            <div class="hint">We'll send you the prompts as a PDF too. No spam. No funnel.</div>
+          </div>
+
+          <div class="form-group">
+            <label>What makes your business different? <span class="optional">(one sentence)</span></label>
+            <input type="text" id="biz-differentiator" placeholder="e.g., Family-owned since 1985, same-day service guaranteed">
+          </div>
+
+          <div class="form-group">
+            <label>Your main service or product <span class="optional">(optional)</span></label>
+            <input type="text" id="biz-service" placeholder="e.g., residential HVAC repair, family dentistry, men's haircuts">
+          </div>
+
+          <button type="submit" class="generate-btn" id="generate-btn">Generate My 50 Prompts</button>
+        </form>
+      </section>
+
+      <section class="results-section" id="results-section">
+        <div class="results-header">
+          <h2>Your Customized Prompts</h2>
+          <button class="copy-all-btn" id="copy-all-btn">Copy All</button>
+        </div>
+        <div id="prompts-container"></div>
+      </section>
+
+      <section class="cta-section" id="cta-section">
+        <p>These prompts are from <strong>AI for Main Street</strong> — a free book that teaches you everything else: how to audit your business for AI opportunities, what voice agents are, and how to avoid getting ripped off.</p>
+        <p><a href="#">Download the free PDF →</a></p>
+        <p style="margin-top: 16px;"><a href="#">Try the AI Audit Worksheet</a> — complete it and get 50% off onboarding.</p>
+        <p style="margin-top: 16px; color: #555;">Questions? <a href="mailto:leo@aiforlancaster.com">leo@aiforlancaster.com</a> · Lancaster, Ohio</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Leo Guinan / MetaSPN · Lancaster, Ohio</p>
+    </div>
+  </footer>
+
+  <script>
+    // ===== PROMPT TEMPLATES =====
+    // {biz_type}, {biz_name}, {location}, {phone}, {email}, {differentiator}, {service}
+    // Anything in [brackets] stays as-is for the user to fill in per-use
+
+    const PROMPT_CATEGORIES = [
+      {
+        name: "Customer Communication",
+        prompts: [
+          { title: "1. Respond to a Positive Review", text: `I own a {biz_type} in {location} called {biz_name}. A customer left this positive review: "[paste review]". Write a warm, professional response that thanks them specifically for what they mentioned, feels genuine and not corporate, and is under 75 words.` },
+          { title: "2. Respond to a Negative Review", text: `I own a {biz_type} in {location} called {biz_name}. A customer left this negative review: "[paste review]". Write a response that acknowledges their frustration without being defensive, offers to make it right, and invites them to contact me directly at {phone_or_email}. Keep it under 100 words and professional but human.` },
+          { title: "3. Appointment Reminder Email", text: `Write a friendly appointment reminder email for {biz_name}, a {biz_type} in {location}. The appointment is [service type] on [date] at [time]. Include: what to bring or prepare, parking/location notes, cancellation policy, and a warm but professional tone. Keep it under 150 words.` },
+          { title: "4. Follow-Up After Service", text: `Write a follow-up email to send 2 days after completing [type of service] for a customer of {biz_name}, a {biz_type} in {location}. Thank them, ask if everything is working/looking good, remind them of any warranty or follow-up care, and gently ask for a Google review. Keep it friendly, not pushy. Under 100 words.` },
+          { title: "5. Estimate Follow-Up", text: `Write a follow-up email for a customer who received an estimate from {biz_name} ({biz_type} in {location}) 5 days ago but hasn't responded. Be helpful, not salesy. Acknowledge they may be comparing options. Offer to answer questions. Don't pressure them. Under 100 words.` },
+          { title: "6. Seasonal Check-In", text: `Write a seasonal check-in email from {biz_name}, a {biz_type} in {location}, for [season]. Mention one relevant seasonal tip related to {service}, remind them we're available if they need anything, and keep it genuinely helpful rather than a sales pitch. Under 125 words.` },
+          { title: "7. New Customer Welcome", text: `Write a welcome email for a new customer of {biz_name}, a {biz_type} in {location}. Include: a thank you for choosing us, what to expect going forward, how to reach us ({phone_or_email}), and one thing that makes us different: {differentiator}. Warm and professional. Under 150 words.` },
+          { title: "8. Friendly Payment Reminder", text: `Write a friendly payment reminder for an invoice from {biz_name} that's [number] days past due. The amount is [amount] for [service provided] on [date]. Keep it polite and assume it was an oversight. Under 75 words.` },
+          { title: "9. Referral Thank-You", text: `Write a short thank-you note for a customer who referred someone to {biz_name} ({biz_type} in {location}). Mention the referral by first name: [name]. Express genuine gratitude. Under 75 words.` },
+          { title: "10. Service Unavailability Notice", text: `Write an email from {biz_name} letting a customer know that [service/product] is currently unavailable and we expect it back by [timeframe]. Offer to put them on a waitlist. Be apologetic but not groveling. Under 100 words.` }
+        ]
+      },
+      {
+        name: "Marketing & Social Media",
+        prompts: [
+          { title: "11. Weekly Social Media Batch", text: `I own a {biz_type} in {location} called {biz_name}. Generate 5 social media posts for this week. Include: one behind-the-scenes post, one customer-focused tip, one seasonal/timely post, one light/fun post that shows personality, and one that highlights {service}. Keep each under 50 words. Suggest a photo idea for each.` },
+          { title: "12. Google Business Profile Post", text: `Write a Google Business Profile post for {biz_name}, a {biz_type} in {location}. This week's focus: [topic]. Include a call to action. Keep it under 100 words. Make it sound like a real person wrote it, not a marketing agency.` },
+          { title: "13. Email Newsletter Draft", text: `Write a short email newsletter for {biz_name}, a {biz_type} in {location}. This month's content: [1-2 topics]. Include a brief intro, the main content broken into scannable sections, and a simple call to action. Target: 200-300 words. Tone: helpful and conversational, like writing to a neighbor.` },
+          { title: "14. Local Event Tie-In Post", text: `{biz_name}, a {biz_type} in {location}, wants to create a social media post tied to [local event]. Write a post that connects our business to the event naturally without being forced. Under 50 words.` },
+          { title: "15. Before/After Project Showcase", text: `Write a social media caption for a before/after photo of a {service} project completed by {biz_name}. Mention the challenge, what we did, and the result. Under 60 words. End with something that invites engagement.` },
+          { title: "16. FAQ Social Post", text: `Write a social media post for {biz_name} ({biz_type}) answering a common customer question: "[paste a question you get asked a lot]". Make it helpful and conversational. Under 75 words. End with "Got more questions? Call us at {phone_or_email}."` },
+          { title: "17. Service Highlight Post", text: `Write a social media post highlighting {service} offered by {biz_name} in {location}. Focus on the benefit to the customer, not the features. Include a call to action. Under 60 words.` },
+          { title: "18. Team Spotlight Post", text: `Write a social media post introducing [team member name] who works at {biz_name}. Include what they do, how long they've been with us, and one fun personal detail. Keep it warm and genuine. Under 75 words.` },
+          { title: "19. Customer Story / Testimonial Post", text: `A customer of {biz_name} had this experience: "[paste their words or story]". Write a social media post that shares their story, thanks them, and shows potential customers what it's like to work with us. Under 75 words. Get their permission before posting.` },
+          { title: "20. Holiday / Seasonal Hours Post", text: `Write a social media post announcing that {biz_name} in {location} will have [modified hours] for [holiday/event]. Keep it warm and festive but informative. Include our regular hours for context. Under 60 words.` }
+        ]
+      },
+      {
+        name: "Operations & Admin",
+        prompts: [
+          { title: "21. Standard Operating Procedure", text: `Here's a transcript of me explaining how to [task] at {biz_name}. Turn this into a clear, step-by-step standard operating procedure. Number the steps. Include any warnings or tips I mentioned. Keep it simple enough that a new employee could follow it on their first day.\\n\\n[Paste your voice memo transcript here]` },
+          { title: "22. Employee Onboarding Checklist", text: `I'm hiring a new [job title] for {biz_name}, a {biz_type} in {location}. Create a first-week onboarding checklist. Include: Day 1 orientation items, key people to meet, systems/tools to learn, safety or compliance requirements, and end-of-week check-in. Organize by Day 1 / Days 2-3 / Days 4-5.` },
+          { title: "23. Customer FAQ Page", text: `I own {biz_name}, a {biz_type} in {location}. Here are the questions my customers ask most often:\\n\\n[List your most common questions]\\n\\nWrite clear, helpful answers for each one. Keep each answer under 75 words. Tone: knowledgeable neighbor, not corporate FAQ.` },
+          { title: "24. Professional Estimate Template", text: `Here is my current estimate format for {biz_name} ({biz_type}):\\n\\n[Paste your current estimate]\\n\\nRewrite it to look professional, include all legally useful information, and make it easy for the customer to understand. Keep the same information but improve the formatting and clarity.` },
+          { title: "25. Meeting Notes to Action Items", text: `Here's a transcript of a meeting at {biz_name}:\\n\\n[Paste transcript]\\n\\nPull out: 1) Key decisions made, 2) Action items with who's responsible, 3) Any deadlines mentioned, 4) Open questions that need follow-up. Format as a clean summary.` },
+          { title: "26. Job Description", text: `Write a job description for a [job title] at {biz_name}, a {biz_type} in {location}. The role involves: [key responsibilities]. Requirements: [list]. We offer: [benefits/pay range/schedule]. Make it sound like a real person wrote it. Include what makes working here different: {differentiator}. Under 300 words.` },
+          { title: "27. Policy Update Communication", text: `Write an internal email to the team at {biz_name} announcing a policy change: [describe the change]. Explain why we're making this change, what it means for them day-to-day, and when it takes effect. Keep it clear, direct, and respectful. Under 200 words.` },
+          { title: "28. Vendor / Supplier Email", text: `Write a professional email to a vendor on behalf of {biz_name}. The situation: [describe — requesting a quote, negotiating terms, reporting an issue, placing an order]. Be direct, professional, and specific about what we need. Under 150 words.` },
+          { title: "29. Customer Intake Form Questions", text: `I run {biz_name}, a {biz_type} in {location}. Help me create a customer intake form. What information do I need to collect from a new customer before [first appointment/service call/consultation]? List the questions in a logical order. Include both essential and nice-to-have questions, labeled accordingly.` },
+          { title: "30. End-of-Day Report Template", text: `Create a simple end-of-day report template for employees at {biz_name} ({biz_type}). It should capture: tasks completed today, any issues or concerns, tomorrow's priorities, and anything the owner needs to know. Keep it to 5-6 fill-in-the-blank items. Quick to complete — under 5 minutes.` }
+        ]
+      },
+      {
+        name: "Hiring & HR",
+        prompts: [
+          { title: "31. Interview Questions", text: `Generate 10 interview questions for a [job title] position at {biz_name}, a {biz_type}. Include: 3 about relevant experience, 3 about work style and reliability, 2 situational questions specific to our industry, and 2 about long-term goals. No trick questions — just honest ones that help me find the right person.` },
+          { title: "32. Job Rejection — Kind", text: `Write a brief, kind rejection email for a job applicant to {biz_name}. We interviewed them for [job title] and they were good but we went with someone else. Be honest, warm, and leave the door open for future opportunities. Under 100 words.` },
+          { title: "33. Employee Review Framework", text: `Create a simple annual review framework for employees at {biz_name} ({biz_type}). Include 5-6 areas to evaluate, a simple 1-5 rating scale, space for specific examples, and a section for goals for the next year. Keep it to one page. Not corporate — practical.` },
+          { title: "34. Training Documentation", text: `I need to document how to [specific task] at {biz_name}. I'm going to paste a voice transcript of me explaining it. Turn it into a clean training document with: overview, step-by-step instructions, common mistakes to avoid, and a quick reference checklist at the end.\\n\\n[Paste transcript]` },
+          { title: "35. Help Wanted — Casual Post", text: `Write a casual social media post for {biz_name} in {location}. We're hiring a [job title]. Instead of a formal job posting, write it like you're telling a friend about the opening. Mention what makes us a good place to work: {differentiator}. Include how to apply. Under 100 words.` }
+        ]
+      },
+      {
+        name: "Financial & Estimates",
+        prompts: [
+          { title: "36. Quote / Proposal Email", text: `Write a professional email from {biz_name} sending a quote to a potential customer. The service: {service}. The quote amount: [amount]. Include: brief summary of what's included, timeline, payment terms, and expiration date of the quote. Professional but warm. Under 200 words.` },
+          { title: "37. Price Increase Communication", text: `Write an email from {biz_name} informing customers of a price increase. The increase: [details]. The reason: [reason — costs, materials, etc.]. Effective date: [date]. Be honest about why, emphasize continued quality, and offer to answer questions. Under 150 words.` },
+          { title: "38. Invoice Dispute Response", text: `A customer of {biz_name} is disputing an invoice. Their concern: [describe]. Write a professional response that acknowledges their concern, explains the charge clearly, and offers to discuss further. Firm but fair. Under 150 words.` },
+          { title: "39. Year-End Customer Thank You", text: `Write a year-end thank-you email from {biz_name} ({biz_type} in {location}) to customers. Reflect briefly on the year, thank them for their business, and mention one thing we're excited about for next year. Warm and genuine, not a sales pitch. Under 150 words.` },
+          { title: "40. Partnership / Collaboration Inquiry", text: `Write an email from {biz_name} reaching out to [another local business type] about a potential collaboration or cross-promotion. Explain what we do, why we think it could be mutually beneficial, and suggest a low-commitment first step (coffee meeting, trial run). Professional but casual. Under 150 words.` }
+        ]
+      },
+      {
+        name: "Strategy & Planning",
+        prompts: [
+          { title: "41. Competitive Analysis Prompt", text: `I own {biz_name}, a {biz_type} in {location}. Help me think through my competitive landscape. What are the key factors customers in my industry consider when choosing a provider? Where might I have advantages or disadvantages compared to larger competitors? What could I do that a bigger company can't? Be specific and practical.` },
+          { title: "42. 90-Day Priority Plan", text: `I own {biz_name}, a {biz_type} in {location}. Here's what I'm dealing with right now: [describe current challenges and goals]. Help me create a focused 90-day plan with no more than 3 priorities. For each priority: what specifically to do, how to measure progress, and what to ignore until these are done.` },
+          { title: "43. Customer Feedback Analysis", text: `Here are recent customer reviews and feedback for {biz_name}:\\n\\n[Paste reviews/feedback]\\n\\nAnalyze this feedback. What patterns do you see? What are customers consistently happy about? What complaints keep coming up? Give me 3 specific, actionable recommendations based on this data.` },
+          { title: "44. Service Expansion Evaluation", text: `I run {biz_name}, a {biz_type} in {location}. I'm considering adding [new service/product]. Help me think through: Is there demand for this in a market like {location}? What would it take to offer it? What could go wrong? What's the simplest way to test demand before committing?` },
+          { title: "45. SWOT for Normal People", text: `Help me do a quick SWOT analysis for {biz_name}, a {biz_type} in {location}. But don't make it MBA-speak. Just tell me: What are we good at? What are we not good at? What opportunities should we be looking at? What could hurt us? Be honest and specific, not generic.` }
+        ]
+      },
+      {
+        name: "Google Business Profile",
+        prompts: [
+          { title: "46. Business Description", text: `Write a Google Business Profile description for {biz_name}, a {biz_type} in {location}. What we do: {service}. What makes us different: {differentiator}. Include relevant keywords naturally. Make it sound like a real person, not SEO spam. Under 750 characters.` },
+          { title: "47. Services List Descriptions", text: `Write short descriptions for each of these services offered by {biz_name} ({biz_type} in {location}):\\n\\n[List your services]\\n\\nEach description should be 2-3 sentences, benefit-focused, and written for a customer, not a search engine. Include relevant details like pricing ranges if applicable.` },
+          { title: "48. Q&A Section Answers", text: `Here are questions customers have asked on {biz_name}'s Google Business Profile:\\n\\n[Paste questions]\\n\\nWrite clear, helpful answers for each. Include our contact info ({phone_or_email}) where relevant. Keep answers under 100 words each. Sound like a human, not a FAQ bot.` },
+          { title: "49. Photo Captions", text: `Write Google Business Profile photo captions for {biz_name} ({biz_type} in {location}). The photos show: [describe 3-5 photos — storefront, team, work in progress, finished project, etc.]. Each caption should be 1-2 sentences, natural, and include relevant keywords without being spammy.` },
+          { title: "50. Update Post — What's New", text: `Write a Google Business Profile update post for {biz_name} in {location}. What's new: [describe — new service, new hours, new team member, seasonal offering, etc.]. Keep it under 100 words. Include a call to action (call us, book online, stop by).` }
+        ]
+      }
+    ];
+
+    // ===== FORM HANDLING =====
+    const form = document.getElementById('business-form');
+    const resultsSection = document.getElementById('results-section');
+    const ctaSection = document.getElementById('cta-section');
+    const promptsContainer = document.getElementById('prompts-container');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const data = {
+        biz_type: document.getElementById('biz-type').value.trim(),
+        biz_name: document.getElementById('biz-name').value.trim(),
+        location: document.getElementById('biz-location').value.trim(),
+        phone: document.getElementById('biz-phone').value.trim(),
+        email: document.getElementById('biz-email').value.trim(),
+        differentiator: document.getElementById('biz-differentiator').value.trim() || 'our commitment to quality and personal service',
+        service: document.getElementById('biz-service').value.trim() || 'our services',
+        phone_or_email: document.getElementById('biz-phone').value.trim() || document.getElementById('biz-email').value.trim()
+      };
+
+      // Generate prompts
+      generatePrompts(data);
+
+      // Send data to backend (placeholder — swap for real endpoint)
+      sendToBackend(data);
+
+      // Show results
+      resultsSection.classList.add('visible');
+      ctaSection.classList.add('visible');
+      resultsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    function generatePrompts(data) {
+      promptsContainer.innerHTML = '';
+      let allPrompts = '';
+
+      PROMPT_CATEGORIES.forEach(category => {
+        const header = document.createElement('h3');
+        header.className = 'category-header';
+        header.textContent = category.name;
+        promptsContainer.appendChild(header);
+
+        category.prompts.forEach(prompt => {
+          let text = prompt.text;
+          text = text.replace(/\{biz_type\}/g, data.biz_type);
+          text = text.replace(/\{biz_name\}/g, data.biz_name);
+          text = text.replace(/\{location\}/g, data.location);
+          text = text.replace(/\{phone\}/g, data.phone || '[your phone number]');
+          text = text.replace(/\{email\}/g, data.email);
+          text = text.replace(/\{differentiator\}/g, data.differentiator);
+          text = text.replace(/\{service\}/g, data.service);
+          text = text.replace(/\{phone_or_email\}/g, data.phone_or_email);
+
+          // Highlight remaining [brackets]
+          const displayText = text.replace(/\[([^\]]+)\]/g, '<span class="remaining-bracket">[$1]</span>');
+
+          const card = document.createElement('div');
+          card.className = 'prompt-card';
+          card.innerHTML = `
+            <div class="prompt-title">${prompt.title}</div>
+            <div class="prompt-text">${displayText}</div>
+            <button class="copy-btn" onclick="copyPrompt(this, \`${text.replace(/`/g, '\\`').replace(/\\/g, '\\\\')}\`)">Copy prompt</button>
+          `;
+          promptsContainer.appendChild(card);
+
+          allPrompts += `--- ${prompt.title} ---\n${text}\n\n`;
+        });
+      });
+
+      // Set up copy all
+      document.getElementById('copy-all-btn').onclick = function() {
+        navigator.clipboard.writeText(allPrompts).then(() => {
+          this.textContent = 'Copied!';
+          setTimeout(() => { this.textContent = 'Copy All'; }, 2000);
+        });
+      };
+    }
+
+    function copyPrompt(btn, text) {
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy prompt';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    function sendToBackend(data) {
+      // PLACEHOLDER: Replace with actual endpoint
+      // This sends the business info so Leo can see who's using the prompts
+      // Options: Beehiiv API, Google Sheets webhook, Make.com, or simple email
+      const payload = {
+        business_type: data.biz_type,
+        business_name: data.biz_name,
+        location: data.location,
+        email: data.email,
+        differentiator: data.differentiator,
+        service: data.service,
+        timestamp: new Date().toISOString()
+      };
+
+      // Uncomment and set your endpoint:
+      // fetch('https://your-endpoint.com/api/prompt-signups', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(payload)
+      // }).catch(err => console.log('Analytics send failed:', err));
+
+      console.log('Prompt generator submission:', payload);
+    }
+  </script>
+
+</body>
+</html>
