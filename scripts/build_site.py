@@ -41,12 +41,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .container { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
 a { color: #8ab4f8; text-decoration: none; }
 a:hover, a:focus { text-decoration: underline; }
 
-/* Nav */
+/* ---- NAV ---- */
 .site-nav {
   border-bottom: 1px solid #1a1a1a;
   padding: 1rem 0;
@@ -66,35 +67,154 @@ a:hover, a:focus { text-decoration: underline; }
 .nav-brand { color: #f0f0f0; font-weight: 700; font-size: 1rem; }
 .nav-brand:hover { text-decoration: none; color: #fff; }
 .nav-links { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
-.nav-links a { color: #999; font-size: 0.9rem; }
+.nav-links a { color: #888; font-size: 0.9rem; }
 .nav-links a:hover { color: #f0f0f0; text-decoration: none; }
 .nav-cta {
   background: #f0f0f0; color: #0a0a0a !important;
   padding: 0.4rem 1rem; border-radius: 4px; font-weight: 600;
 }
-.nav-cta:hover { background: #d4d4d4 !important; }
+.nav-cta:hover { background: #d4d4d4 !important; text-decoration: none !important; }
 
-/* Footer */
-.site-footer { padding: 3rem 0; text-align: center; border-top: 1px solid #1a1a1a; margin-top: 4rem; }
-.site-footer p { color: #555; font-size: 0.85rem; margin-bottom: 0.35rem; }
-.site-footer a { color: #666; font-size: 0.85rem; }
-.site-footer a:hover { color: #8ab4f8; }
-.footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1rem; }
+/* ---- HERO (homepage) ---- */
+.hero {
+  padding: 6rem 0 4rem;
+  text-align: center;
+  border-bottom: 1px solid #1a1a1a;
+}
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+.hero .one-liner {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  font-style: italic;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background-color: #f0f0f0;
+  color: #0a0a0a;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.cta-button:hover, .cta-button:focus {
+  background-color: #d4d4d4;
+  text-decoration: none;
+}
 
-/* Guide page styles */
+/* ---- HOMEPAGE SECTIONS ---- */
+.section-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+.problem { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
+.problem-text { font-size: 1.15rem; color: #b0b0b0; line-height: 1.8; }
+.learn { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
+.learn-list { list-style: none; padding: 0; }
+.learn-list li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.05rem;
+  color: #c8c8c8;
+  border-bottom: 1px solid #141414;
+}
+.learn-list li:last-child { border-bottom: none; }
+.learn-list li::before { content: "—"; position: absolute; left: 0; color: #555; }
+.chapter-ref { color: #666; font-size: 0.9rem; }
+.author { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
+.author-content { display: flex; gap: 2rem; align-items: flex-start; }
+.author-photo {
+  flex-shrink: 0; width: 120px; height: 120px;
+  background-color: #1a1a1a; color: #555;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; border-radius: 4px;
+}
+.author-bio p { color: #b0b0b0; font-size: 1rem; margin-bottom: 0.75rem; }
+.author-email a { color: #8ab4f8; font-size: 0.95rem; }
+.signup { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
+.signup-subtext { color: #888; font-size: 0.95rem; margin-bottom: 2rem; }
+.signup-form { max-width: 420px; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.9rem; color: #999; margin-bottom: 0.4rem; }
+.form-group .optional { color: #555; font-size: 0.8rem; }
+.form-group .required { color: #c0392b; }
+.form-group input {
+  width: 100%; padding: 0.75rem 1rem;
+  background-color: #141414; border: 1px solid #2a2a2a;
+  border-radius: 4px; color: #e0e0e0; font-size: 1rem;
+  font-family: inherit; transition: border-color 0.2s ease;
+}
+.form-group input::placeholder { color: #555; }
+.form-group input:focus { outline: none; border-color: #555; }
+.submit-button {
+  display: inline-block; padding: 0.8rem 2rem;
+  background-color: #f0f0f0; color: #0a0a0a;
+  font-size: 1rem; font-weight: 600; border: none;
+  border-radius: 4px; cursor: pointer; font-family: inherit;
+  transition: background-color 0.2s ease;
+}
+.submit-button:hover, .submit-button:focus { background-color: #d4d4d4; }
+
+/* ---- HOMEPAGE GUIDES SECTION ---- */
+.guides-section { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
+.section-subheading { color: #888; font-size: 0.9rem; margin-top: -0.75rem; margin-bottom: 1.75rem; }
+.guide-list { list-style: none; padding: 0; }
+.guide-list li { padding: 0.65rem 0; border-bottom: 1px solid #141414; }
+.guide-list li:last-child { border-bottom: none; }
+.guide-list a {
+  color: #8ab4f8;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.guide-list a:hover { text-decoration: underline; color: #aecfff; }
+.see-all {
+  display: inline-block; margin-top: 1.25rem;
+  color: #8ab4f8; font-size: 0.9rem;
+}
+.see-all:hover { text-decoration: underline; }
+
+/* ---- GUIDE PAGE ---- */
 .guide-header { padding: 4rem 0 2rem; border-bottom: 1px solid #1a1a1a; }
-.guide-header h1 { font-size: 2rem; font-weight: 700; color: #f0f0f0; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
-.guide-meta { color: #666; font-size: 0.85rem; }
+.guide-header h1 {
+  font-size: 2rem; font-weight: 700; color: #f0f0f0;
+  letter-spacing: -0.02em; margin-bottom: 0.75rem;
+}
+.guide-meta { color: #555; font-size: 0.85rem; }
 .guide-body { padding: 3rem 0; }
-.guide-body h2 { font-size: 1.3rem; font-weight: 600; color: #e0e0e0; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+/* Suppress the redundant H1 that markdown renders from the # title line */
+.guide-body > h1:first-child { display: none; }
+.guide-body h2 {
+  font-size: 1.3rem; font-weight: 600; color: #e0e0e0;
+  margin: 2.5rem 0 1rem; letter-spacing: -0.01em;
+}
 .guide-body h3 { font-size: 1.1rem; font-weight: 600; color: #d0d0d0; margin: 2rem 0 0.75rem; }
+.guide-body h4 { font-size: 1rem; font-weight: 600; color: #c0c0c0; margin: 1.5rem 0 0.5rem; }
 .guide-body p { color: #b0b0b0; margin-bottom: 1.25rem; }
 .guide-body ul, .guide-body ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
 .guide-body li { color: #b0b0b0; margin-bottom: 0.5rem; }
 .guide-body strong { color: #d4d4d4; }
 .guide-body a { color: #8ab4f8; }
+.guide-body a:hover { text-decoration: underline; color: #aecfff; }
 .guide-body blockquote {
-  border-left: 3px solid #333; padding-left: 1.25rem;
+  border-left: 3px solid #2a2a2a; padding-left: 1.25rem;
   margin: 1.5rem 0; color: #888; font-style: italic;
 }
 .guide-body hr { border: none; border-top: 1px solid #1a1a1a; margin: 2.5rem 0; }
@@ -106,43 +226,46 @@ a:hover, a:focus { text-decoration: underline; }
 .guide-cta a {
   display: inline-block; padding: 0.75rem 1.75rem;
   background: #f0f0f0; color: #0a0a0a; font-weight: 600;
-  border-radius: 4px; font-size: 0.95rem;
+  border-radius: 4px; font-size: 0.95rem; text-decoration: none;
 }
-.guide-cta a:hover { background: #d4d4d4; text-decoration: none; }
+.guide-cta a:hover { background: #d4d4d4; }
 .breadcrumb { color: #555; font-size: 0.85rem; margin-bottom: 1.5rem; }
 .breadcrumb a { color: #666; }
 .breadcrumb a:hover { color: #8ab4f8; }
 
-/* Guides index */
+/* ---- GUIDES INDEX ---- */
 .guides-grid { display: flex; flex-direction: column; gap: 0; }
-.guide-card {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #1a1a1a;
-}
+.guide-card { padding: 1.5rem 0; border-bottom: 1px solid #1a1a1a; }
 .guide-card:last-child { border-bottom: none; }
-.guide-card h3 { font-size: 1.05rem; font-weight: 600; color: #e0e0e0; margin-bottom: 0.4rem; }
-.guide-card h3 a { color: #e0e0e0; }
-.guide-card h3 a:hover { color: #8ab4f8; text-decoration: none; }
-.guide-card p { color: #888; font-size: 0.9rem; margin: 0; }
-.guide-card .guide-date { color: #555; font-size: 0.8rem; margin-top: 0.4rem; }
+.guide-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; }
+.guide-card h3 a { color: #8ab4f8; text-decoration: none; }
+.guide-card h3 a:hover { text-decoration: underline; color: #aecfff; }
+.guide-card p { color: #777; font-size: 0.9rem; margin: 0; }
 .page-header { padding: 4rem 0 2rem; border-bottom: 1px solid #1a1a1a; }
-.page-header h1 { font-size: 2rem; font-weight: 700; color: #f0f0f0; margin-bottom: 0.5rem; }
+.page-header h1 { font-size: 2rem; font-weight: 700; color: #f0f0f0; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
 .page-header p { color: #888; }
 
-/* Homepage guides section */
-.guides-section { padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
-.section-heading { font-size: 1.4rem; font-weight: 600; color: #e0e0e0; margin-bottom: 1.5rem; }
-.section-subheading { color: #888; font-size: 0.9rem; margin-top: -1rem; margin-bottom: 1.5rem; }
-.guide-list { list-style: none; padding: 0; }
-.guide-list li { padding: 0.65rem 0; border-bottom: 1px solid #141414; }
-.guide-list li:last-child { border-bottom: none; }
-.guide-list a { color: #c8c8c8; font-size: 1rem; }
-.guide-list a:hover { color: #8ab4f8; }
-.see-all { display: inline-block; margin-top: 1.25rem; color: #666; font-size: 0.9rem; }
-.see-all:hover { color: #8ab4f8; }
+/* ---- FOOTER ---- */
+.site-footer { padding: 3rem 0; text-align: center; border-top: 1px solid #1a1a1a; margin-top: 4rem; }
+.site-footer p { color: #555; font-size: 0.85rem; margin-bottom: 0.35rem; }
+.site-footer a { color: #666; font-size: 0.85rem; }
+.site-footer a:hover { color: #8ab4f8; }
+.footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1rem; }
+.amazon-link { color: #666; font-size: 0.85rem; }
+.amazon-link:hover { color: #8ab4f8; }
 
+/* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
   .nav-links { display: none; }
+  .hero { padding: 4rem 0 3rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero .subtitle { font-size: 1rem; }
+  .hero .one-liner { font-size: 1rem; }
+  .problem, .learn, .author, .signup { padding: 3rem 0; }
+  .author-content { flex-direction: column; align-items: center; text-align: center; }
+  .author-photo { width: 100px; height: 100px; }
+  .signup-form { max-width: 100%; }
+  .submit-button { width: 100%; }
   .guide-header h1 { font-size: 1.5rem; }
   .guide-body h2 { font-size: 1.15rem; }
 }
