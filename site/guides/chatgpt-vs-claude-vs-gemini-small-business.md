@@ -42,7 +42,7 @@ I used the free tiers, the $20/month individual tiers, and the business/team tie
 
 ## ChatGPT: The One Everyone's Heard Of
 
-**Current model:** GPT-4o (with GPT-4.5 available on higher tiers)
+**Current model:** OpenAI's latest (updated regularly)
 
 **What it's good at:**
 
@@ -60,14 +60,14 @@ It also tends toward confident wrongness. When ChatGPT doesn't know something, i
 
 **Cost:**
 
-- **Free:** GPT-4o mini with limits. Usable for light tasks. You'll hit rate limits during a busy workday.
-- **Plus ($20/month):** GPT-4o, Advanced Data Analysis, image generation, custom GPTs. This is the sweet spot for most small businesses.
+- **Free:** A lighter version of their model with limits. Usable for light tasks. You'll hit rate limits during a busy workday.
+- **Plus ($20/month):** Full model access, Advanced Data Analysis, image generation, custom GPTs. This is the sweet spot for most small businesses.
 - **Team ($25/user/month, annual):** Admin controls, higher limits, workspace features. Worth it once you have 3+ employees using it regularly.
 - **Enterprise:** Custom pricing. Not relevant for most small businesses reading this.
 
 ## Claude: The Careful Writer
 
-**Current model:** Claude Opus 4.6, Sonnet 4.6, Haiku 4.5
+**Current model:** Anthropic's latest Claude (updated regularly)
 
 **What it's good at:**
 
@@ -87,14 +87,14 @@ Claude can also be overly cautious. Ask it to write a strongly worded business l
 
 **Cost:**
 
-- **Free:** Sonnet 4.6 with daily message limits. Enough to evaluate whether you like the writing style. Not enough for daily business use.
-- **Pro ($20/month):** Opus 4.6, Sonnet 4.6, higher limits, Projects feature for organizing work. Direct competitor to ChatGPT Plus.
+- **Free:** Mid-tier Claude with daily message limits. Enough to evaluate whether you like the writing style. Not enough for daily business use.
+- **Pro ($20/month):** Full Claude access, higher limits, Projects feature for organizing work. Direct competitor to ChatGPT Plus.
 - **Team ($25/user/month, annual):** Similar to ChatGPT Team—admin controls, higher limits, shared projects.
 - **Enterprise:** Custom pricing.
 
 ## Gemini: The Google Ecosystem Play
 
-**Current model:** Gemini 2.5 Pro, Gemini 2.5 Flash
+**Current model:** Google's latest Gemini (updated regularly)
 
 **What it's good at:**
 
@@ -112,8 +112,8 @@ Gemini's standalone interface (gemini.google.com) is less intuitive than ChatGPT
 
 **Cost:**
 
-- **Free:** Gemini 2.5 Flash, generous limits. Best free tier of the three for daily use.
-- **Google One AI Premium ($19.99/month):** Gemini 2.5 Pro, integration across Google Workspace, 2TB storage. If you're already paying for Google One, this is a straightforward upgrade.
+- **Free:** Gemini with generous limits. Best free tier of the three for daily use.
+- **Google One AI Premium ($19.99/month):** Full Gemini access, integration across Google Workspace, 2TB storage. If you're already paying for Google One, this is a straightforward upgrade.
 - **Workspace add-on ($14/user/month on top of Workspace):** Gemini for Business. Priced competitively if you're already in the Google ecosystem.
 
 ## Head-to-Head on Real Tasks

@@ -38,14 +38,14 @@ Now, the specifics.
 
 ## ChatGPT free: what you get, what the limits are
 
-**What you get:** Access to GPT-4o, which is OpenAI's current flagship model. You can have conversations, upload images for analysis, browse the web, use basic data analysis, generate images with DALL-E, and access a limited version of the GPT store.
+**What you get:** Access to OpenAI's current flagship model. You can have conversations, upload images for analysis, browse the web, use basic data analysis, generate images with DALL-E, and access a limited version of the GPT store.
 
 **The real limits:**
 
-- You get a message cap that resets roughly every few hours. When you hit it, you get bumped down to GPT-4o mini, which is noticeably less capable. OpenAI doesn't publish the exact numbers and they change, but in my experience you can get through maybe 15-20 back-and-forth messages with GPT-4o before the throttle kicks in.
+- You get a message cap that resets roughly every few hours. When you hit it, you get bumped down to a less capable model. OpenAI doesn't publish the exact numbers and they change, but in my experience you can get through maybe 15-20 back-and-forth messages before the throttle kicks in.
 - Image generation is limited to a couple per day. If you need to iterate on a design or generate a batch of images, you'll hit the wall fast.
 - File uploads work but you can't use the more advanced data analysis features consistently.
-- No access to the o1 or o3 reasoning models. These are the ones that think step by step through complex problems. Free tier doesn't get them.
+- No access to the advanced reasoning models. These are the ones that think step by step through complex problems. Free tier doesn't get them.
 - Custom GPTs from the store are available but limited in how often you can use them.
 
 **What it's actually good for, free:** Quick questions. Drafting emails or short documents. Summarizing something you paste in. Getting a second opinion on a piece of writing. Brainstorming names, taglines, or ideas. One-off image generation when you need a rough visual. Web browsing to research a topic.
@@ -56,12 +56,12 @@ ChatGPT has the largest user base, which means the most third-party tutorials, t
 
 ## Claude free: what you get, what the limits are
 
-**What you get:** Access to Claude Sonnet, which is Anthropic's mid-tier model. Conversations, file uploads, and a feature called Projects that lets you organize your work.
+**What you get:** Access to a mid-tier Claude model from Anthropic. Conversations, file uploads, and a feature called Projects that lets you organize your work.
 
 **The real limits:**
 
 - The message cap is real and you will hit it. Claude's free tier is the most aggressively rate-limited of the three. During busy periods, you might get locked out after a relatively short session. The limits aren't published and they fluctuate based on demand.
-- No access to Claude Opus, the most capable model. Sonnet is good, but Opus is noticeably better at complex reasoning and nuanced writing.
+- No access to Anthropic's most capable Claude model. The free tier is good, but the paid tier is noticeably better at complex reasoning and nuanced writing.
 - No access to Claude's extended thinking features, which let the model reason through hard problems step by step before responding.
 - File upload limits are more restrictive than the paid tier.
 - Web search is limited or unavailable on the free tier.
@@ -119,7 +119,7 @@ After you've used the free tiers for a few weeks on real work, you'll know wheth
 
 **You're hitting rate limits daily and it's interrupting your work.** If you're consistently running out of free messages in the middle of tasks, and this is costing you time, the math starts to make sense. If your time is worth $50/hour and the free tier limits cost you even 30 minutes a week, the $20/month subscription pays for itself.
 
-**You need a specific paid feature.** ChatGPT's o3 reasoning models, Claude's Opus model and extended thinking, Gemini's deep Google Workspace integration. These are genuinely better for certain tasks. If your work involves complex analysis, long-form content, or heavy document processing, the paid models are noticeably more capable.
+**You need a specific paid feature.** ChatGPT's advanced reasoning models, Claude's most capable tier and extended thinking, Gemini's deep Google Workspace integration. These are genuinely better for certain tasks. If your work involves complex analysis, long-form content, or heavy document processing, the paid models are noticeably more capable.
 
 **You're using AI as a core part of your daily workflow, not an occasional helper.** Once AI goes from "sometimes useful" to "I use this every day," the paid tier removes the friction that makes daily use annoying.
 

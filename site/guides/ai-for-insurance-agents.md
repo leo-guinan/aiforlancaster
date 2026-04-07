@@ -65,7 +65,7 @@ I'm going to be direct about costs because vendors are often vague about them.
 
 ### General AI Tools Adapted for Insurance
 
-**ChatGPT (GPT-4o)** — $20/month for the Plus tier, which is what you need for reasonable performance. Useful for drafting client emails, summarizing policy documents, creating comparison templates. Not useful for anything requiring real-time data, current carrier rates, or regulatory lookups. It will confidently make things up about specific policy language or Ohio insurance regulations. Treat it like a smart intern who needs to be checked.
+**ChatGPT** — $20/month for the Plus tier, which is what you need for reasonable performance. Useful for drafting client emails, summarizing policy documents, creating comparison templates. Not useful for anything requiring real-time data, current carrier rates, or regulatory lookups. It will confidently make things up about specific policy language or Ohio insurance regulations. Treat it like a smart intern who needs to be checked.
 
 **Claude (Anthropic)** — Similar pricing tier to ChatGPT. I'd argue it handles longer documents somewhat better—useful if you're uploading loss runs or policy docs and asking for summaries. Same caveats apply.
 

@@ -40,8 +40,8 @@ These are the tools that do a little bit of everything. They're where you should
 ### ChatGPT (by OpenAI)
 
 **Website:** chat.openai.com
-**Free tier:** Yes. Limited usage, GPT-3.5 model.
-**Paid tier:** $20/month (ChatGPT Plus — GPT-4o model, more usage, image generation)
+**Free tier:** Yes. Limited usage, a free model.
+**Paid tier:** $20/month (ChatGPT Plus — their latest model, more usage, image generation)
 
 **What it's good at:**
 - Best all-around performer for business writing
@@ -100,12 +100,12 @@ These are the tools that do a little bit of everything. They're where you should
 ### Microsoft Copilot
 
 **Website:** copilot.microsoft.com
-**Free tier:** Yes (uses GPT-4).
+**Free tier:** Yes.
 **Paid tier:** $30/month per user for Microsoft 365 Copilot (requires Microsoft 365 Business subscription)
 
 **What it's good at:**
 - Integrates with Microsoft Office (Word, Excel, Outlook, PowerPoint). If you live in Microsoft's ecosystem, this is the play.
-- The free version is surprisingly capable — it uses GPT-4 under the hood.
+- The free version is surprisingly capable — it uses a capable model under the hood.
 - Good at Excel-related tasks if you pay for the full Microsoft integration.
 
 **What it's bad at:**

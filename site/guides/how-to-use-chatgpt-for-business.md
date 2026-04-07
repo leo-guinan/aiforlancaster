@@ -110,7 +110,7 @@ When in doubt, use placeholder data. "[CLIENT NAME]" and "[REVENUE FIGURE]" work
 
 ## When to Pay $20/Month
 
-The free tier of ChatGPT uses GPT-4o mini during busy times and has usage caps. The $20/month Plus plan gets you consistent access to GPT-4o, the ability to create custom GPTs, file uploads, and image generation with DALL-E.
+The free tier of ChatGPT has usage caps and throttles during busy times. The $20/month Plus plan gets you consistent access to their full model, the ability to create custom GPTs, file uploads, and image generation.
 
 Here's my honest take: if you use ChatGPT less than three times a week, the free tier is fine. If you use it daily for real work, the Plus plan pays for itself almost immediately just in time savings. $20/month is less than a half-hour of most people's billable rate.
 
