@@ -276,6 +276,8 @@ FOOTER_HTML = '''<footer class="site-footer">
       <a href="/guides/">Guides</a>
       <a href="/prompts/">Prompts</a>
       <a href="/audit/">Free Audit</a>
+      <a href="/rabbit-hole/">Rabbit Hole</a>
+      <a href="/about/">About</a>
       <a href="mailto:leo@aiforlancaster.com">Contact</a>
     </div>
     <p>&copy; 2026 Leo Guinan / MetaSPN &mdash; Lancaster, Ohio</p>
@@ -556,6 +558,48 @@ def patch_existing_page(path):
     return src
 
 
+def build_rabbit_hole():
+    """Build /rabbit-hole/ from the JSON entries file."""
+    entries_path = SITE_ROOT / 'site' / 'rabbit-hole' / 'entries.json'
+    if not entries_path.exists():
+        return None
+
+    entries = json.loads(entries_path.read_text())
+
+    # Render entries newest-first
+    entries_html = ''
+    for e in reversed(entries):
+        date = e.get('date', '')
+        etype = e.get('type', 'thought')
+        title = e.get('title', '')
+        url = e.get('url', '')
+        note = e.get('note', '')
+
+        type_class = 'feed-type-link' if etype == 'link' else 'feed-type-thought'
+
+        title_html = ''
+        if title and url:
+            title_html = f'<div class="feed-title"><a href="{url}" target="_blank" rel="noopener">{title}</a></div>'
+        elif title:
+            title_html = f'<div class="feed-title">{title}</div>'
+
+        note_html = f'<div class="feed-note">{inline_md(note)}</div>' if note else ''
+
+        entries_html += f'''<div class="feed-entry">
+  <div class="feed-date">{date}</div>
+  <span class="feed-type {type_class}">{etype}</span>
+  {title_html}
+  {note_html}
+</div>
+'''
+
+    # Read template and inject entries
+    template_path = DEPLOY / 'rabbit-hole' / 'index.html'
+    src = template_path.read_text()
+    src = src.replace('<!-- ENTRIES_INJECT -->', entries_html)
+    return src
+
+
 def make_sitemap(all_guides):
     """Generate sitemap.xml for the full site."""
     today = datetime.now().strftime('%Y-%m-%d')
@@ -574,6 +618,8 @@ def make_sitemap(all_guides):
     urls.append(url('https://www.aiforlancaster.com/audit/', '0.8', 'monthly'))
     urls.append(url('https://www.aiforlancaster.com/prompts/', '0.8', 'monthly'))
     urls.append(url('https://www.aiforlancaster.com/call/', '0.7', 'monthly'))
+    urls.append(url('https://www.aiforlancaster.com/about/', '0.5', 'monthly'))
+    urls.append(url('https://www.aiforlancaster.com/rabbit-hole/', '0.6', 'weekly'))
 
     for g in sorted(all_guides, key=lambda x: x.get('date', ''), reverse=True):
         urls.append(url(
@@ -784,10 +830,18 @@ def main():
             p.write_text(patch_existing_page(p))
             print(f'  Patched {p.relative_to(DEPLOY)}')
 
-    # 8. Generate and write sitemap.xml
+    # 8. Build rabbit-hole page from JSON entries
+    rh_html = build_rabbit_hole()
+    if rh_html:
+        rh_dir = DEPLOY / 'rabbit-hole'
+        rh_dir.mkdir(exist_ok=True)
+        (rh_dir / 'index.html').write_text(rh_html)
+        print('Built /rabbit-hole/')
+
+    # 9. Generate and write sitemap.xml
     sitemap = make_sitemap(all_guides)
     (DEPLOY / 'sitemap.xml').write_text(sitemap)
-    print(f'Wrote sitemap.xml ({len(all_guides) + 5} URLs)')
+    print(f'Wrote sitemap.xml ({len(all_guides) + 7} URLs)')
 
     # 9. Write a manifest of all guides (used by cron)
     manifest = [{'slug': g['slug'], 'title': g['title'], 'date': g['date']} for g in all_guides]
