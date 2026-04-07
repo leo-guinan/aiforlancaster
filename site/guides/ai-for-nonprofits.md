@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "AI for Small Nonprofits: Grants, Communications, and Doing More with Less"
 description: "Practical AI guide for small nonprofits covering grant writing, donor emails, events, and social media with real costs and free options."
@@ -125,4 +124,3 @@ This week, do one thing: take your most recent grant application — the one you
 Read what it says. You'll disagree with some of it. You'll find at least one suggestion genuinely useful. And you'll have a concrete sense of what AI can and can't do for your organization — without spending a dollar or attending a webinar.
 
 That's a better starting point than any strategy deck.
-```

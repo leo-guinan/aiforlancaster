@@ -350,7 +350,7 @@ Cover these sections in order:
 {outline_text}
 
 Format requirements:
-- Output raw markdown with frontmatter (title, description, keywords, author, date)
+- Output raw markdown with frontmatter (title, description, keywords as a single comma-separated string NOT a YAML list, author, date)
 - Use ## for main sections, ### for subsections
 - 1800-2500 words total
 - Real numbers, real examples, real trade-offs

@@ -140,4 +140,3 @@ Then open Claude or ChatGPT, free tier, and prompt it: "Write an outline for a b
 That's your first piece of local content. It cost you nothing but time. See what happens over the next 30 days in Search Console. Then decide if you want to keep going.
 
 No agency required. No magic. Just showing up consistently in a space where most of your competitors aren't.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "AI Customer Service for Small Business: Chatbots, Voice, and When to Skip It"
 description: "Honest guide to AI customer service for small business. Real costs, setup steps, and when to skip it entirely."
@@ -198,4 +197,3 @@ If your list shows 5+ questions that come up repeatedly with simple, predictable
 If your list shows mostly unique, complex, or relationship-dependent interactions — you just saved yourself $100-500/month and hours of setup time. Your competitive advantage is being a real person who gives a damn. Lean into that instead.
 
 Either way, you'll know based on your actual data, not a vendor's sales deck.
-```

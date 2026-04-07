@@ -163,17 +163,36 @@ FOOTER_HTML = '''<footer class="site-footer">
 
 
 def parse_frontmatter(text):
-    """Extract YAML-ish frontmatter and body from markdown."""
+    """Extract YAML-ish frontmatter and body from markdown.
+    Handles both inline values and YAML list syntax for keywords."""
     if not text.startswith('---'):
         return {}, text
     parts = text.split('---', 2)
     if len(parts) < 3:
         return {}, text
     meta = {}
+    current_list_key = None
     for line in parts[1].strip().splitlines():
+        # YAML list item under a previous key
+        if current_list_key and re.match(r'^\s+-\s+', line):
+            item = re.sub(r'^\s+-\s+', '', line).strip().strip('"')
+            if isinstance(meta[current_list_key], list):
+                meta[current_list_key].append(item)
+            continue
+        current_list_key = None
         if ':' in line:
             k, _, v = line.partition(':')
-            meta[k.strip()] = v.strip().strip('"')
+            k = k.strip()
+            v = v.strip().strip('"')
+            if v == '':
+                # Value is a YAML list on following lines
+                meta[k] = []
+                current_list_key = k
+            else:
+                meta[k] = v
+    # Collapse list keywords to comma string for meta tag
+    if 'keywords' in meta and isinstance(meta['keywords'], list):
+        meta['keywords'] = ', '.join(meta['keywords'])
     return meta, parts[2].strip()
 
 
