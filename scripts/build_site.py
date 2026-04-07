@@ -365,16 +365,17 @@ def build_homepage(all_guides):
       </div>
     </section>'''
 
-    # Read existing homepage and inject
-    src = (DEPLOY / 'index.html').read_text()
+    # Always read from the canonical template, never from the already-built output
+    template_path = SITE_ROOT / 'landing-page' / 'index.html'
+    src = template_path.read_text()
 
-    # Replace <head> to add Fathom + new stylesheet
+    # Replace stylesheet ref + add Fathom
     src = src.replace(
         '<link rel="stylesheet" href="style.css">',
         f'<link rel="stylesheet" href="/style.css">\n  {FATHOM_SNIPPET}'
     )
 
-    # Inject nav after <body>
+    # Inject nav once, right after <body>
     src = src.replace('<body>\n', f'<body>\n{NAV}\n')
 
     # Inject guides section before email capture
