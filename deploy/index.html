@@ -18,7 +18,7 @@
       <li><a href="/guides/">Guides</a></li>
       <li><a href="/prompts/">Prompts</a></li>
       <li><a href="/audit/">Free Audit</a></li>
-      <li><a href="/#get-the-book" class="nav-cta">Get the Book</a></li>
+      <li><a href="/demo/" class="nav-cta">Request Demo</a></li>
     </ul>
   </div>
 </nav>
@@ -79,7 +79,7 @@
         <h2 id="guides-heading" class="section-heading">Free Guides</h2>
         <p class="section-subheading">Plain English. Real numbers. No sales pitch.</p>
         <ul class="guide-list">
-          <li><a href="/guides/ai-for-insurance-agents/">AI for Insurance Agents: What Actually Saves Time vs. What Creates Compliance Problems</a></li><li><a href="/guides/ai-automation-small-business/">AI Automation for Small Business: Zapier, Make, and When to Go Custom</a></li><li><a href="/guides/ai-customer-service-small-business/">AI Customer Service for Small Business: Chatbots, Voice, and When to Skip It</a></li><li><a href="/guides/ai-email-tools-small-business/">AI Email Tools for Small Business: What Saves Time Without Sounding Like a Robot</a></li><li><a href="/guides/ai-for-accounting-bookkeeping/">AI for Small Business Accounting and Bookkeeping: What Saves Time, What Causes Errors</a></li><li><a href="/guides/ai-for-contractors/">AI for Contractors and Tradespeople: Estimates, Scheduling, and Customer Follow-Up</a></li>
+          <li><a href="/guides/ai-for-auto-shops/">AI for Auto Shops: Scheduling, Estimates, and Keeping Customers Coming Back</a></li><li><a href="/guides/ai-for-insurance-agents/">AI for Insurance Agents: What Actually Saves Time vs. What Creates Compliance Problems</a></li><li><a href="/guides/ai-automation-small-business/">AI Automation for Small Business: Zapier, Make, and When to Go Custom</a></li><li><a href="/guides/ai-customer-service-small-business/">AI Customer Service for Small Business: Chatbots, Voice, and When to Skip It</a></li><li><a href="/guides/ai-email-tools-small-business/">AI Email Tools for Small Business: What Saves Time Without Sounding Like a Robot</a></li><li><a href="/guides/ai-for-accounting-bookkeeping/">AI for Small Business Accounting and Bookkeeping: What Saves Time, What Causes Errors</a></li>
         </ul>
         <a href="/guides/" class="see-all">See all guides &rarr;</a>
       </div>
@@ -90,15 +90,16 @@
       <div class="container">
         <h2 id="signup-heading" class="section-heading">Get the Free PDF</h2>
         <p class="signup-subtext">No spam. No funnel. Just the book.</p>
-        <form action="#" method="POST" class="signup-form">
+        <form action="https://app.convertkit.com/forms/9306971/subscriptions" method="POST" class="signup-form">
           <div class="form-group">
             <label for="name">Name <span class="optional">(optional)</span></label>
-            <input type="text" id="name" name="name" autocomplete="given-name" placeholder="Your name">
+            <input type="text" id="name" name="fields[first_name]" autocomplete="given-name" placeholder="Your name">
           </div>
           <div class="form-group">
             <label for="email">Email <span class="required">*</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+            <input type="email" id="email" name="email_address" required autocomplete="email" placeholder="you@example.com">
           </div>
+          <input type="hidden" name="fields[source]" value="homepage_pdf">
           <button type="submit" class="submit-button">Send Me the Book</button>
         </form>
       </div>

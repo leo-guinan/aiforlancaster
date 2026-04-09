@@ -65,15 +65,16 @@
       <div class="container">
         <h2 id="signup-heading" class="section-heading">Get the Free PDF</h2>
         <p class="signup-subtext">No spam. No funnel. Just the book.</p>
-        <form action="#" method="POST" class="signup-form">
+        <form action="https://app.convertkit.com/forms/9306971/subscriptions" method="POST" class="signup-form">
           <div class="form-group">
             <label for="name">Name <span class="optional">(optional)</span></label>
-            <input type="text" id="name" name="name" autocomplete="given-name" placeholder="Your name">
+            <input type="text" id="name" name="fields[first_name]" autocomplete="given-name" placeholder="Your name">
           </div>
           <div class="form-group">
             <label for="email">Email <span class="required">*</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+            <input type="email" id="email" name="email_address" required autocomplete="email" placeholder="you@example.com">
           </div>
+          <input type="hidden" name="fields[source]" value="homepage_pdf">
           <button type="submit" class="submit-button">Send Me the Book</button>
         </form>
       </div>

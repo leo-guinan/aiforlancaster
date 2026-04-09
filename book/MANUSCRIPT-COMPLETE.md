@@ -12,14 +12,14 @@ they need AI but hasn't been told the truth about it.*
 
 ## About the Author
 
-Leo Guinan is the founder of MetaSPN, a technology company based in Lancaster,
-Ohio. He builds AI systems — the practical kind that process information, make
+Leo Guinan is the founder of AI for Lancaster, a local technology company based
+in Lancaster, Ohio. He builds AI systems — the practical kind that process information, make
 predictions, and automate repetitive work. His prediction track record is 42%,
 which means he's wrong more than he's right. He publishes his predictions
 before he knows the outcomes and publishes the misses with the same weight as
 the hits.
 
-He lives in Lancaster with his wife and kids. His email is leo@metaspn.com.
+He lives in Lancaster with his wife and kids. His email is Leo@aiforlancaster.com.
 He'd rather hear from you than not.
 
 Get your 50 customized AI prompts at aiforlancaster.com/prompts
@@ -2524,7 +2524,7 @@ The tech industry has a tendency to talk about small towns like they're problems
 
 Use what's useful in this book. Ignore what's not. Try things. Break things. Ask questions.
 
-My email is leo@metaspn.com. If this book helped, tell me. If you think I got something wrong, tell me that too. I'd rather hear from you than not.
+My email is Leo@aiforlancaster.com. If this book helped, tell me. If you think I got something wrong, tell me that too. I'd rather hear from you than not.
 
 And if you need help with something this book didn't cover, I'm 10 minutes away.
 

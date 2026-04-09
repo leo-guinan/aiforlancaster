@@ -2,205 +2,217 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.aiforlancaster.com/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/audit/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/prompts/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/call/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/about/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/rabbit-hole/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.aiforlancaster.com/demo/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aiforlancaster.com/guides/ai-for-auto-shops/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-insurance-agents/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-automation-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-customer-service-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-email-tools-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-accounting-bookkeeping/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-contractors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-home-services/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-law-offices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-medical-offices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-nonprofits/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-real-estate-agents/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-retail-stores/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-scheduling-tools/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-social-media-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-tools-free-tier-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/best-ai-phone-answering-service/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/chatgpt-vs-claude-vs-gemini-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/how-to-use-chatgpt-for-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-content-marketing-local-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-restaurants/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-for-salons-spas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-marketing-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-tools-comparison-2025/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/ai-voice-agents-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/hire-ai-consultant-without-getting-burned/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/how-to-audit-business-for-ai/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aiforlancaster.com/guides/what-is-ai-small-business/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

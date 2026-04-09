@@ -41,7 +41,7 @@ If you're someone who wants to create a version for your own town, skip to the l
 
 Leo Guinan is the founder of MetaSPN, a technology company based in Lancaster, Ohio. He builds AI systems — the practical kind that process information, make predictions, and automate repetitive work. His prediction track record is 42%, which means he's wrong more than he's right. He publishes his predictions before he knows the outcomes and publishes the misses with the same weight as the hits.
 
-He lives in Lancaster with his wife and kids. His email is leo@metaspn.com. He'd rather hear from you than not.
+He lives in Lancaster with his wife and kids. His email is Leo@aiforlancaster.com. He'd rather hear from you than not.
 
 Get your 50 customized AI prompts at aiforlancaster.com/prompts
 Download the free AI audit worksheet at aiforlancaster.com/audit

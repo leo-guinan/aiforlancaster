@@ -24,7 +24,7 @@ NAV = '''<nav class="site-nav">
       <li><a href="/guides/">Guides</a></li>
       <li><a href="/prompts/">Prompts</a></li>
       <li><a href="/audit/">Free Audit</a></li>
-      <li><a href="/#get-the-book" class="nav-cta">Get the Book</a></li>
+      <li><a href="/demo/" class="nav-cta">Request Demo</a></li>
     </ul>
   </div>
 </nav>'''
@@ -620,6 +620,7 @@ def make_sitemap(all_guides):
     urls.append(url('https://www.aiforlancaster.com/call/', '0.7', 'monthly'))
     urls.append(url('https://www.aiforlancaster.com/about/', '0.5', 'monthly'))
     urls.append(url('https://www.aiforlancaster.com/rabbit-hole/', '0.6', 'weekly'))
+    urls.append(url('https://www.aiforlancaster.com/demo/', '0.9', 'weekly'))
 
     for g in sorted(all_guides, key=lambda x: x.get('date', ''), reverse=True):
         urls.append(url(
