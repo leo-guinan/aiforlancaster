@@ -30,6 +30,11 @@
     "date": "2026-04-09"
   },
   {
+    "slug": "ai-for-childcare",
+    "title": "Ai For Childcare",
+    "date": "2026-01-01"
+  },
+  {
     "slug": "ai-for-contractors",
     "title": "AI for Contractors and Tradespeople: Estimates, Scheduling, and Customer Follow-Up",
     "date": "2026-04-07"
@@ -63,6 +68,11 @@
     "slug": "ai-for-nonprofits",
     "title": "AI for Small Nonprofits: Grants, Communications, and Doing More with Less",
     "date": "2026-04-07"
+  },
+  {
+    "slug": "ai-for-pet-services",
+    "title": "AI for Pet Services: Grooming, Boarding, and Dog Walking Without the Overhead",
+    "date": "2026-04-12"
   },
   {
     "slug": "ai-for-real-estate-agents",

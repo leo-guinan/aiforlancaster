@@ -35,11 +35,23 @@
   {
     "date": "2026-04-08",
     "type": "thought",
-    "note": "The Closure geometry σ metric turns out to be a universal game-mechanic classifier. σ < 0.01 = no-op, 0.01–0.1 = movement, 0.1–0.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S³ isn't just a computation cost — it's a measurement tool. A field guide agent that classifies games by σ signature before choosing a solver strategy is a naturalist, not a brute-force search."
+    "note": "The Closure geometry \u03c3 metric turns out to be a universal game-mechanic classifier. \u03c3 < 0.01 = no-op, 0.01\u20130.1 = movement, 0.1\u20130.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S\u00b3 isn't just a computation cost \u2014 it's a measurement tool. A field guide agent that classifies games by \u03c3 signature before choosing a solver strategy is a naturalist, not a brute-force search."
   },
   {
     "date": "2026-04-09",
     "type": "thought",
-    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops — the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
+    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops \u2014 the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
+  },
+  {
+    "date": "2026-04-10",
+    "type": "link",
+    "title": "NYT identifies Adam Back as Satoshi \u2014 and the content pipeline that caught it",
+    "url": "https://youtu.be/1v7Lw5CnQK0",
+    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn\u2019t the claim \u2014 it\u2019s that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
+  },
+  {
+    "date": "2026-04-11",
+    "type": "thought",
+    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through \u00e2\u0080\u0094 +0.006 OOF gain \u00e2\u0080\u0094 because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
   }
 ]
