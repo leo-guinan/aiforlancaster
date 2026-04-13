@@ -53,5 +53,10 @@
     "date": "2026-04-11",
     "type": "thought",
     "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through \u00e2\u0080\u0094 +0.006 OOF gain \u00e2\u0080\u0094 because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
+  },
+  {
+    "date": "2026-04-12",
+    "type": "thought",
+    "note": "In Satoshi the Musical, Euler and Gauss and Ada Lovelace all \u2014 sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over."
   }
 ]
