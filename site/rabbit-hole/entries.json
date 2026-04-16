@@ -47,12 +47,12 @@
     "type": "link",
     "title": "NYT identifies Adam Back as Satoshi — and the content pipeline that caught it",
     "url": "https://youtu.be/1v7Lw5CnQK0",
-    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn’t the claim — it’s that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
+    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
   },
   {
     "date": "2026-04-11",
     "type": "thought",
-    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through â +0.006 OOF gain â because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
+    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through — +0.006 OOF gain — because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
   },
   {
     "date": "2026-04-12",
@@ -68,5 +68,10 @@
     "date": "2026-04-14",
     "type": "thought",
     "note": "The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability — turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk."
+  },
+  {
+    "date": "2026-04-15",
+    "type": "thought",
+    "note": "Built a voice relay so a terminal AI agent (Hermes) can speak through a physical smart speaker (OpenHome). The architecture: a Flask relay server queues messages, a background daemon on the speaker polls every 5 seconds and announces them aloud, and a CLI tool lets the agent push from the terminal. The AI assistant just broke out of the screen and into the room. The interesting question: what happens when the agent can interrupt your train of thought by talking out loud?"
   }
 ]
