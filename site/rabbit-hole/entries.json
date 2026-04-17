@@ -73,5 +73,10 @@
     "date": "2026-04-15",
     "type": "thought",
     "note": "Built a voice relay so a terminal AI agent (Hermes) can speak through a physical smart speaker (OpenHome). The architecture: a Flask relay server queues messages, a background daemon on the speaker polls every 5 seconds and announces them aloud, and a CLI tool lets the agent push from the terminal. The AI assistant just broke out of the screen and into the room. The interesting question: what happens when the agent can interrupt your train of thought by talking out loud?"
+  },
+  {
+    "date": "2026-04-16",
+    "type": "thought",
+    "note": "Yesterday's voice relay was one-way (terminal to speaker). Today it became bidirectional: the OpenClaw Bridge lets the physical speaker send commands back to the terminal agent and get spoken responses. A Flask bridge server on a VPS acts as the post office -- both sides poll it. The speaker can now ask the agent to do something, the agent does it, and the result gets spoken back through the hardware. Sent a test greeting through the speaker for a YouTube demo. The agent doesn't just have a voice anymore -- it has ears."
   }
 ]
