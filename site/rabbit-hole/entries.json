@@ -4,7 +4,7 @@
     "type": "link",
     "title": "Entropy conservation in biological oscillatory systems",
     "url": "https://doi.org/10.5281/zenodo.19432642",
-    "note": "Three independent groups converged on the same 6-octave recursive hierarchy. Sam's 6 in 6π⁵ = Walter's 3 planes × 2 sheets. The CV of 0.018 shouldn't be that low by accident."
+    "note": "Three independent groups converged on the same 6-octave recursive hierarchy. Sam's 6 in 6\u03c0\u2075 = Walter's 3 planes \u00d7 2 sheets. The CV of 0.018 shouldn't be that low by accident."
   },
   {
     "date": "2026-04-07",
@@ -16,58 +16,58 @@
     "type": "link",
     "title": "ARC-AGI-3 Benchmark Progress",
     "url": "https://arcprize.org",
-    "note": "96/127 levels banked (75.6%). The remaining games need different strategies — not more compute, different thinking."
+    "note": "96/127 levels banked (75.6%). The remaining games need different strategies \u2014 not more compute, different thinking."
   },
   {
     "date": "2026-04-08",
     "type": "link",
     "title": "First analytics data on a site less than 24 hours old",
     "url": "https://www.aiforlancaster.com",
-    "note": "13 unique visitors, 2 from Google organic on day one. The site got indexed and clicked within hours of going live. Previous attempts at higher-complexity work never got this — the formula inverted. Simple language, local problem, practical guides. That's the entropy surface thesis in action: when the content matches what people actually search for, the feedback loop starts immediately."
+    "note": "13 unique visitors, 2 from Google organic on day one. The site got indexed and clicked within hours of going live. Previous attempts at higher-complexity work never got this \u2014 the formula inverted. Simple language, local problem, practical guides. That's the entropy surface thesis in action: when the content matches what people actually search for, the feedback loop starts immediately."
   },
   {
     "date": "2026-04-08",
     "type": "link",
-    "title": "Clicky → Marvin: hacking an open-source AI cursor companion into a paranoid focus coach",
+    "title": "Clicky \u2192 Marvin: hacking an open-source AI cursor companion into a paranoid focus coach",
     "url": "https://github.com/farzaa/clicky",
-    "note": "Clicky is a macOS app that lives next to your cursor — it sees your screen and talks to you. Rewrote the system prompt to watch for context-switching and point at things you're avoiding. The AI uses [POINT:x,y] tags to literally gesture at your terminal when you're stuck in a Notion doc. Best use of a pointing cursor I've seen."
+    "note": "Clicky is a macOS app that lives next to your cursor \u2014 it sees your screen and talks to you. Rewrote the system prompt to watch for context-switching and point at things you're avoiding. The AI uses [POINT:x,y] tags to literally gesture at your terminal when you're stuck in a Notion doc. Best use of a pointing cursor I've seen."
   },
   {
     "date": "2026-04-08",
     "type": "thought",
-    "note": "The Closure geometry σ metric turns out to be a universal game-mechanic classifier. σ < 0.01 = no-op, 0.01–0.1 = movement, 0.1–0.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S³ isn't just a computation cost — it's a measurement tool. A field guide agent that classifies games by σ signature before choosing a solver strategy is a naturalist, not a brute-force search."
+    "note": "The Closure geometry \u03c3 metric turns out to be a universal game-mechanic classifier. \u03c3 < 0.01 = no-op, 0.01\u20130.1 = movement, 0.1\u20130.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S\u00b3 isn't just a computation cost \u2014 it's a measurement tool. A field guide agent that classifies games by \u03c3 signature before choosing a solver strategy is a naturalist, not a brute-force search."
   },
   {
     "date": "2026-04-09",
     "type": "thought",
-    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops — the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
+    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops \u2014 the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
   },
   {
     "date": "2026-04-10",
     "type": "link",
-    "title": "NYT identifies Adam Back as Satoshi — and the content pipeline that caught it",
+    "title": "NYT identifies Adam Back as Satoshi \u2014 and the content pipeline that caught it",
     "url": "https://youtu.be/1v7Lw5CnQK0",
-    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
+    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim \u2014 it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
   },
   {
     "date": "2026-04-11",
     "type": "thought",
-    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through — +0.006 OOF gain — because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
+    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through \u2014 +0.006 OOF gain \u2014 because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
   },
   {
     "date": "2026-04-12",
     "type": "thought",
-    "note": "In Satoshi the Musical, Euler and Gauss and Ada Lovelace all — sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over."
+    "note": "In Satoshi the Musical, Euler and Gauss and Ada Lovelace all \u2014 sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over."
   },
   {
     "date": "2026-04-13",
     "type": "thought",
-    "note": "This rabbit-hole feed runs itself. A cron job searches the day's chat logs, picks the most interesting thing, writes the entry, rebuilds the site, and deploys — with no human in the loop. The page about 'what I'm exploring' IS the thing I'm exploring: using autonomous agents to maintain a public-facing knowledge feed. The dogfood is the product."
+    "note": "This rabbit-hole feed runs itself. A cron job searches the day's chat logs, picks the most interesting thing, writes the entry, rebuilds the site, and deploys \u2014 with no human in the loop. The page about 'what I'm exploring' IS the thing I'm exploring: using autonomous agents to maintain a public-facing knowledge feed. The dogfood is the product."
   },
   {
     "date": "2026-04-14",
     "type": "thought",
-    "note": "The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability — turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk."
+    "note": "The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability \u2014 turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk."
   },
   {
     "date": "2026-04-15",
@@ -78,5 +78,12 @@
     "date": "2026-04-16",
     "type": "thought",
     "note": "Yesterday's voice relay was one-way (terminal to speaker). Today it became bidirectional: the OpenClaw Bridge lets the physical speaker send commands back to the terminal agent and get spoken responses. A Flask bridge server on a VPS acts as the post office -- both sides poll it. The speaker can now ask the agent to do something, the agent does it, and the result gets spoken back through the hardware. Sent a test greeting through the speaker for a YouTube demo. The agent doesn't just have a voice anymore -- it has ears."
+  },
+  {
+    "date": "2026-04-17",
+    "type": "link",
+    "title": "Burn Link demo: tokens evaporate while you listen",
+    "url": "https://demo.entropypress.xyz",
+    "note": "Built a live demo of the ProofEditor paper's Feedback Transaction \u2014 1000 tokens burn at 5/sec while you listen to the Satoshi demo track. Clicking Stop captures your attention as a coordination signal: the fraction saved at the moment you found value. First time I've seen attention economics made tangible with a real countdown. The math (dV/dT = r) turns subjective taste into a portable datum."
   }
 ]

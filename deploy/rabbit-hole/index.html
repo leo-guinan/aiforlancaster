@@ -45,6 +45,60 @@
 
     <div class="feed">
       <div class="feed-entry">
+  <div class="feed-date">2026-04-17</div>
+  <span class="feed-type feed-type-link">link</span>
+  <div class="feed-title"><a href="https://demo.entropypress.xyz" target="_blank" rel="noopener">Burn Link demo: tokens evaporate while you listen</a></div>
+  <div class="feed-note">Built a live demo of the ProofEditor paper's Feedback Transaction — 1000 tokens burn at 5/sec while you listen to the Satoshi demo track. Clicking Stop captures your attention as a coordination signal: the fraction saved at the moment you found value. First time I've seen attention economics made tangible with a real countdown. The math (dV/dT = r) turns subjective taste into a portable datum.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-16</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">Yesterday's voice relay was one-way (terminal to speaker). Today it became bidirectional: the OpenClaw Bridge lets the physical speaker send commands back to the terminal agent and get spoken responses. A Flask bridge server on a VPS acts as the post office -- both sides poll it. The speaker can now ask the agent to do something, the agent does it, and the result gets spoken back through the hardware. Sent a test greeting through the speaker for a YouTube demo. The agent doesn't just have a voice anymore -- it has ears.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-15</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">Built a voice relay so a terminal AI agent (Hermes) can speak through a physical smart speaker (OpenHome). The architecture: a Flask relay server queues messages, a background daemon on the speaker polls every 5 seconds and announces them aloud, and a CLI tool lets the agent push from the terminal. The AI assistant just broke out of the screen and into the room. The interesting question: what happens when the agent can interrupt your train of thought by talking out loud?</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-14</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability — turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-13</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">This rabbit-hole feed runs itself. A cron job searches the day's chat logs, picks the most interesting thing, writes the entry, rebuilds the site, and deploys — with no human in the loop. The page about 'what I'm exploring' IS the thing I'm exploring: using autonomous agents to maintain a public-facing knowledge feed. The dogfood is the product.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-12</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">In Satoshi the Musical, Euler and Gauss and Ada Lovelace all — sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-11</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through — +0.006 OOF gain — because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-10</div>
+  <span class="feed-type feed-type-link">link</span>
+  <div class="feed-title"><a href="https://youtu.be/1v7Lw5CnQK0" target="_blank" rel="noopener">NYT identifies Adam Back as Satoshi — and the content pipeline that caught it</a></div>
+  <div class="feed-note">The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat.</div>
+</div>
+<div class="feed-entry">
+  <div class="feed-date">2026-04-09</div>
+  <span class="feed-type feed-type-thought">thought</span>
+  
+  <div class="feed-note">The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops — the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives.</div>
+</div>
+<div class="feed-entry">
   <div class="feed-date">2026-04-08</div>
   <span class="feed-type feed-type-thought">thought</span>
   
@@ -80,6 +134,7 @@
   <div class="feed-title"><a href="https://doi.org/10.5281/zenodo.19432642" target="_blank" rel="noopener">Entropy conservation in biological oscillatory systems</a></div>
   <div class="feed-note">Three independent groups converged on the same 6-octave recursive hierarchy. Sam's 6 in 6π⁵ = Walter's 3 planes × 2 sheets. The CV of 0.018 shouldn't be that low by accident.</div>
 </div>
+
 
     </div>
   </div>
