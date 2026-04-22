@@ -94,6 +94,11 @@
   {
     "date": "2026-04-20",
     "type": "thought",
-    "note": "Pulled analytics on the AI for Lancaster YouTube channel: 35 videos, 8,195 views \u2014 but 98.9% of views come from just 8 videos. Personal titles ('I/My') average 3.5x more views than concept titles. The wildest data point: 'I Broke My AI on Camera (Audio Version)' got 742 views while the video version of the same content got 2. Same creator, same ideas, same audience \u2014 the only variable was upload timing and format. The distribution isn't a quality signal, it's a discoverability signal. The algorithm doesn't find good content, it amplifies whatever momentum already exists."
+    "note": "Pulled analytics on the AI for Lancaster YouTube channel: 35 videos, 8,195 views — but 98.9% of views come from just 8 videos. Personal titles ('I/My') average 3.5x more views than concept titles. The wildest data point: 'I Broke My AI on Camera (Audio Version)' got 742 views while the video version of the same content got 2. Same creator, same ideas, same audience — the only variable was upload timing and format. The distribution isn't a quality signal, it's a discoverability signal. The algorithm doesn't find good content, it amplifies whatever momentum already exists."
+  },
+  {
+    "date": "2026-04-21",
+    "type": "thought",
+    "note": "A Hadamard matrix search engine has been running autonomously for 4+ days — 438+ runs, every ~20 minutes, hunting for larger-determinant ±1 matrices at n=23, 27, 29. No new records yet. The interesting wrinkle: the stated n=27 benchmark was ~7.13×10¹⁶ but the actual internal running record is ~1.33×10¹⁹ — off by 186x. When a benchmark metric and the actual optimization target diverge by two orders of magnitude, you're either measuring different things or someone copied a number wrong four years ago. Either way, the search continues unattended."
   }
 ]
