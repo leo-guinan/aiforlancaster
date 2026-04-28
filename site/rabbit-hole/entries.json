@@ -109,15 +109,22 @@
   {
     "date": "2026-04-25",
     "type": "link",
-    "title": "Hadamard n=27 record shattered — +130× over benchmark",
+    "title": "Hadamard n=27 record shattered \u2014 +130\u00d7 over benchmark",
     "url": "https://github.com/leo-guinan/caisc2026/blob/main/hadamard/results/continuous/20260425_2025/n27/best_overall.json",
-    "note": "The continuous search found a determinant of 9.33×10^18, beating the stated n=27 record of 7.13×10^16 by ~130×. When optimization leaps by two orders of magnitude, either the old benchmark was loose or the search space had a hidden valley no one found before."
+    "note": "The continuous search found a determinant of 9.33\u00d710^18, beating the stated n=27 record of 7.13\u00d710^16 by ~130\u00d7. When optimization leaps by two orders of magnitude, either the old benchmark was loose or the search space had a hidden valley no one found before."
   },
   {
     "date": "2026-04-26",
     "type": "link",
-    "title": "Hadamard n=27 record was 186× smaller than reality",
+    "title": "Hadamard n=27 record was 186\u00d7 smaller than reality",
     "url": "https://cs.uwaterloo.ca/journals/JIS/VOL16/Brent/brent2.pdf",
-    "note": "The CAISc code documented n=27 record as ~7.13×10^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26×10^19. The formula 2^38×3^12×7×13 evaluates correctly; the comment was wrong by 186× and everyone was optimizing against a phantom benchmark. The published record is much higher because it's the proven maximum for ehlich-bound matrices, not raw determinant. Always cross-check comments against literature."
+    "note": "The CAISc code documented n=27 record as ~7.13\u00d710^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26\u00d710^19. The formula 2^38\u00d73^12\u00d77\u00d713 evaluates correctly; the comment was wrong by 186\u00d7 and everyone was optimizing against a phantom benchmark. The published record is much higher because it's the proven maximum for ehlich-bound matrices, not raw determinant. Always cross-check comments against literature."
+  },
+  {
+    "date": "2026-04-27",
+    "type": "link",
+    "title": "AI navigates phone tree, reaches human at River Valley Mall",
+    "url": "https://arc.metaspn.network/openhome-calls",
+    "note": "The ElevenLabs AI agent detected an auto-attendant, extracted menu options, pressed '1' via DTMF to reach the general manager, and conducted a 3-minute leasing interview with Brenda. First fully autonomous outbound business call that successfully navigated a phone system to reach a live person."
   }
 ]
