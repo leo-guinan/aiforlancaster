@@ -126,5 +126,10 @@
     "title": "AI navigates phone tree, reaches human at River Valley Mall",
     "url": "https://arc.metaspn.network/openhome-calls",
     "note": "The ElevenLabs AI agent detected an auto-attendant, extracted menu options, pressed '1' via DTMF to reach the general manager, and conducted a 3-minute leasing interview with Brenda. First fully autonomous outbound business call that successfully navigated a phone system to reach a live person."
+  },
+  {
+    "date": "2026-04-28",
+    "type": "thought",
+    "note": "Reverse-engineering the Toybox 3D printer Android app revealed its Meteor DDP backend at make.toys/toys and a local REST API at 192.168.244.1/custom-toys/. The printer won't boot without its WiFi module \u2014 it's not just a peripheral, it's a terminal."
   }
 ]
