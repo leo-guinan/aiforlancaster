@@ -131,5 +131,10 @@
     "date": "2026-04-28",
     "type": "thought",
     "note": "Reverse-engineering the Toybox 3D printer Android app revealed its Meteor DDP backend at make.toys/toys and a local REST API at 192.168.244.1/custom-toys/. The printer won't boot without its WiFi module \u2014 it's not just a peripheral, it's a terminal."
+  },
+  {
+    "date": "2026-04-29",
+    "type": "thought",
+    "note": "Marvin's new personality: permanently happy bodega cat at Bottega Bodega. Brain the size of a planet, retired to cat form \u2014 the irony is the point. Built as a sensor-grounded OpenHome ability that only speaks when triggered by observations, not LLN whims. The daemon polls the VPS every 3s and speaks plain events. A voice agent that doesn't think for itself, just reports what it senses \u2014 the anti-hallucination."
   }
 ]
