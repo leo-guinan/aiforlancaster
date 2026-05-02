@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Content — Bottega Bodega</title>
+  <link rel="stylesheet" href="/bodega-style.css">
+  <style>
+    .delivery { padding: 3rem 1.5rem; max-width: 680px; margin: 0 auto; }
+    .content-box {
+      border: 3px solid #ffd700; padding: 2rem; margin: 1.5rem 0;
+      background: #1a1a2e;
+    }
+    .note-box {
+      border-left: 4px solid #c9a227; padding: 1rem; margin: 1.5rem 0;
+      font-family: 'Comic Sans MS', cursive; color: #d4d4d4; line-height: 1.8;
+      background: #252540; transform: rotate(-0.5deg);
+    }
+    .note-signature { text-align: right; margin-top: 1rem; color: #ffd700; }
+    .member-nav { margin-top: 2rem; border-top: 2px dashed #3d3d6b; padding-top: 1rem; }
+    .member-nav a { color: #8ab4f8; margin-right: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main class="delivery">
+    <h1 class="section-heading">Your Featured Content</h1>
+    
+    <div class="content-box">
+      <h3>{{ content.title }}</h3>
+      <p>{{ content.description or 'No description.' }}</p>
+      {% if content.file_path.endswith('.pdf') or content.file_path.endswith('.jpg') or content.file_path.endswith('.png') %}
+      <a href="/static/content/{{ content.id }}.{{ content.file_path.split('.')[-1] }}" 
+         class="buy-button" style="display:inline-block;width:auto;padding:0.75rem 1.5rem;text-decoration:none;">
+        Open Content
+      </a>
+      {% endif %}
+    </div>
+    
+    <div class="note-box">
+      <p>{{ content.note_text | replace('\n', '<br>') | safe }}</p>
+      <div class="note-signature">— Leo</div>
+    </div>
+    
+    <div class="member-nav">
+      <a href="/member/{{ member.id }}/wall">Add Your Photo to the Wall</a>
+      <a href="/member/{{ member.id }}/events">View Dining Events</a>
+    </div>
+  </main>
+</body>
+</html>

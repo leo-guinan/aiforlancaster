@@ -1,0 +1,10 @@
+{% extends "admin_dashboard.html" %}
+{% block extra %}
+<h2>Mallrat Content Management</h2>
+<p class="subtitle">Upload content pieces and handwritten notes.</p>
+<form method="POST" enctype="multipart/form-data">
+  <input type="text" name="title" placeholder="Content title" style="width:100%;padding:0.75rem;margin:0.5rem 0;background:#1a1a2e;border:2px solid #3d3d6b;color:#e8e8e8;font-family:VT323;">
+  <textarea name="note" placeholder="Handwritten-style note" style="width:100%;padding:0.75rem;margin:0.5rem 0;background:#1a1a2e;border:2px solid #3d3d6b;color:#e8e8e8;font-family:VT323;height:100px;"></textarea>
+  <button type="submit" class="buy-button">Save Content</button>
+</form>
+{% endblock %}

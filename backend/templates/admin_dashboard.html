@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Bottega Bodega</title>
+  <link rel="stylesheet" href="/bodega-style.css">
+  <style>
+    .admin { padding: 2rem 1.5rem; }
+    .admin-nav { 
+      display: flex; gap: 1rem; margin-bottom: 2rem; 
+      border-bottom: 2px dashed #3d3d6b; padding-bottom: 1rem;
+    }
+    .admin-nav a { color: #ffd700; font-family: 'Press Start 2P', cursive; font-size: 0.6rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid #252540; color: #b8b8d0; }
+    th { color: #ffd700; font-family: 'Press Start 2P', cursive; font-size: 0.6rem; }
+    .badge { 
+      display: inline-block; padding: 2px 8px; font-size: 0.7rem; 
+      background: #3d3d6b; color: #e8e8e8; font-family: 'Press Start 2P', cursive;
+    }
+    .badge.mallrat { background: #4a7c59; }
+    .badge.dining { background: #c9a227; color: #0f0f1a; }
+  </style>
+</head>
+<body>
+  <main class="admin">
+    <h1 class="section-heading">Bodega Back Office</h1>
+    
+    <nav class="admin-nav">
+      <a href="/admin/dashboard?key={{ key }}">Members</a>
+      <a href="/admin/content?key={{ key }}">Content</a>
+      <a href="/admin/events?key={{ key }}">Events</a>
+      <a href="/admin/wall?key={{ key }}">Wall</a>
+      <a href="/admin/ballad?key={{ key }}">Ballads</a>
+    </nav>
+    
+    <h2>Recent Members</h2>
+    <table>
+      <tr><th>ID</th><th>Email</th><th>Tier</th><th>Joined</th></tr>
+      {% for m in members %}
+      <tr>
+        <td>{{ m.id }}</td>
+        <td>{{ m.email }}</td>
+        <td><span class="badge {{ m.tier }}">{{ m.tier }}</span></td>
+        <td>{{ m.joined_at.strftime('%Y-%m-%d') if m.joined_at else '—' }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    
+    <h2>Pending Ballads</h2>
+    <table>
+      <tr><th>ID</th><th>Member</th><th>Status</th><th>Created</th></tr>
+      {% for b in ballads %}
+      <tr>
+        <td>{{ b.id }}</td>
+        <td>{{ b.member.email if b.member else '—' }}</td>
+        <td>{{ b.status }}</td>
+        <td>{{ b.created_at.strftime('%Y-%m-%d') if b.created_at else '—' }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    
+    <p><a href="/admin?key={{ key }}">Refresh</a></p>
+  </main>
+</body>
+</html>

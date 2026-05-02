@@ -1,0 +1,442 @@
+/* =========================================
+   BOTTEGA BODEGA — Retro RPG Shop Theme
+   Pixel style, inventory cards, gold borders
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+/* Reset & Base */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background-color: #0f0f1a;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #1a1a2e 100%, transparent),
+    radial-gradient(1px 1px at 40px 70px, #1a1a2e 100%, transparent),
+    radial-gradient(1px 1px at 90px 40px, #1a1a2e 100%, transparent),
+    radial-gradient(1px 1px at 130px 80px, #1a1a2e 100%, transparent),
+    radial-gradient(2px 2px at 180px 120px, #252540 100%, transparent);
+  background-size: 200px 200px;
+  color: #e8e8e8;
+  font-family: 'VT323', monospace;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CRT scanline overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,0.1) 0px,
+    rgba(0,0,0,0.1) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ---- RPG HEADER ---- */
+.rpg-header {
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+  border-bottom: 4px double #c9a227;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+  position: relative;
+}
+
+.rpg-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    linear-gradient(90deg, transparent 49.5%, #c9a227 49.5%, #c9a227 50.5%, transparent 50.5%),
+    linear-gradient(0deg, transparent 49.5%, #c9a227 49.5%, #c9a227 50.5%, transparent 50.5%);
+  background-size: 40px 40px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.shop-sign {
+  font-family: 'Press Start 2P', cursive;
+  color: #c9a227;
+  text-shadow: 2px 2px 0 #8b6914, -1px -1px 0 #3d3d00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.shop-logo {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  margin-bottom: 0.25rem;
+}
+
+
+.shop-prefix, .shop-suffix {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.shop-name {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  animation: flicker 4s infinite alternate;
+}
+
+.shop-loc {
+  font-size: 0.7rem;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+.shop-tagline {
+  margin-top: 1.5rem;
+  color: #a0a0c0;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { text-shadow: 2px 2px 0 #8b6914, -1px -1px 0 #3d3d00; }
+  20%, 24%, 55% { text-shadow: 2px 2px 0 #8b6914, -1px -1px 0 #3d3d00, 0 0 10px #ffd700; }
+}
+
+/* ---- INTRO ---- */
+.intro {
+  padding: 3rem 0;
+  border-bottom: 2px solid #252540;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  color: #b8b8d0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.intro-text strong {
+  color: #ffd700;
+}
+
+.intro-subtext {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+.intro-subtext {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+/* ---- TIERS GRID ---- */
+.tiers {
+  padding: 3rem 0;
+}
+
+.tiers .section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  color: #ffd700;
+}
+.tiers-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tiers-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .tier-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- TIER CARD ---- */
+.tier-card {
+  background: linear-gradient(165deg, #1a1a2e 0%, #141428 100%);
+  border: 3px solid #3d3d6b;
+  border-radius: 0;
+  padding: 2rem;
+  position: relative;
+  box-shadow:
+    inset 2px 2px 0 #252540,
+    inset -2px -2px 0 #0f0f1a,
+    4px 4px 0 rgba(0,0,0,0.5);
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-4px);
+  border-color: #5a5a9a;
+}
+
+.tier-card.mallrat { border-color: #4a7c59; }   /* forest green */
+.tier-card.dining-club { border-color: #c9a227; }
+
+.tier-card.marvin-treat { border-color: #e8871e; }   /* Marvin orange */
+.tier-card.marvin-treat .tier-badge {
+  background: #e8871e;
+  color: #0f0f1a;
+} /* gold */
+
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #c9a227;
+  color: #0f0f1a;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  padding: 6px 10px;
+  text-transform: uppercase;
+}
+
+.tier-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #3d3d6b;
+}
+
+.tier-icon {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  margin-bottom: 0.75rem;
+}
+
+.tier-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #ffd700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.tier-subtitle {
+  font-size: 0.95rem;
+  color: #a0a0c0;
+}
+
+/* ---- PRICE DISPLAY ---- */
+.tier-price {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.tier-price .currency {
+  font-size: 1rem;
+  vertical-align: top;
+  color: #ffd700;
+}
+
+.tier-price {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.tier-price .period {
+  display: block;
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+/* ---- FEATURES LIST ---- */
+.tier-features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.tier-features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: #c8c8e0;
+}
+
+.tier-features li::before {
+  content: "►";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-size: 0.7rem;
+  top: 0.65rem;
+}
+
+/* ---- FLAVOR TEXT (small print) ---- */
+.tier-flavor {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #0f0f1a;
+  border-left: 3px solid #3d3d6b;
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.flavor-label {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* ---- BUY BUTTON ---- */
+.buy-button {
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  background: linear-gradient(180deg, #4a7c59 0%, #2d5a3d 100%);
+  color: #e8e8e8;
+  border: 3px solid #2d5a3d;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 0 #1a3520;
+  transition: all 0.1s ease;
+}
+
+.buy-button:hover {
+  background: linear-gradient(180deg, #5a9c69 0%, #3d6a4d 100%);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1a3520;
+}
+
+.buy-button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.buy-button.premium {
+  background: linear-gradient(180deg, #c9a227 0%, #a6831a 100%);
+  border-color: #a6831a;
+  box-shadow: 0 4px 0 #6b5a10;
+}
+
+.buy-button.premium:hover {
+  background: linear-gradient(180deg, #d9b237 0%, #b6932a 100%);
+  box-shadow: 0 2px 0 #6b5a10;
+}
+
+
+.buy-button.marvin {
+  background: linear-gradient(180deg, #e8871e 0%, #c65a17 100%);
+  border-color: #c65a17;
+  box-shadow: 0 4px 0 #8a3d10;
+}
+
+.buy-button.marvin:hover {
+  background: linear-gradient(180deg, #f0973a 0%, #d86a27 100%);
+  box-shadow: 0 2px 0 #8a3d10;
+}
+
+.buy-button.marvin:active {
+  box-shadow: none;
+}
+
+.buy-button.premium:active {
+  box-shadow: none;
+}
+
+/* ---- DETAILS SECTION ---- */
+.details {
+  padding: 3rem 0;
+  border-top: 2px solid #252540;
+}
+
+.details .section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #ffd700;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .details-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #b8b8d0;
+}
+
+.detail-icon {
+  font-size: 1.3rem;
+}
+
+.detail-link {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- FOOTER ---- */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 4px double #252540;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  color: #666;
+  margin-bottom: 0.35rem;
+}
+
+.site-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 500px) {
+  .shop-name { font-size: 1.1rem; }
+  .tier-price { font-size: 1.6rem; }
+  .buy-button { font-size: 0.6rem; padding: 0.85rem; }
+}

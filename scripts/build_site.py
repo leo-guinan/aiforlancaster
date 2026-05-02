@@ -6,9 +6,11 @@ Run from the local-ai-business directory.
 """
 
 import os
+import sys
 import re
 import json
 import shutil
+import subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -770,6 +772,9 @@ def autolink_body(html_body, current_slug, link_index, max_links=4):
 
 
 def main():
+    # Also build Bottega Bodega membership site
+    subprocess.run([sys.executable, "scripts/build_bodega_site.py"], check=True)
+
     # 1. Write shared stylesheet
     (DEPLOY / 'style.css').write_text(SHARED_CSS)
     print('Wrote style.css')

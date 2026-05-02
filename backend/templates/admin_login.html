@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Bottega Bodega</title>
+  <link rel="stylesheet" href="/bodega-style.css">
+  <style>
+    .admin-login { padding: 4rem 1.5rem; text-align: center; }
+    .admin-login input { 
+      font-family: 'VT323', monospace; font-size: 1.2rem; padding: 0.75rem; 
+      width: 300px; max-width: 100%; margin: 1rem 0;
+      background: #1a1a2e; border: 2px solid #c9a227; color: #ffd700;
+    }
+    .admin-login button {
+      font-family: 'Press Start 2P', cursive; font-size: 0.7rem;
+      background: #c9a227; color: #0f0f1a; border: none; padding: 1rem 2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="admin-login">
+    <h2 class="section-heading">Bodega Back Office</h2>
+    <form method="GET" action="/admin/dashboard">
+      <input type="password" name="key" placeholder="Admin password" autofocus>
+      <br>
+      <button type="submit">Enter</button>
+    </form>
+  </main>
+</body>
+</html>

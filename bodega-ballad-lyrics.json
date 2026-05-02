@@ -1,0 +1,49 @@
+{
+  "title": "Bottega Bodega Blues",
+  "character": "Marvin the Bodega Cat",
+  "structure": [
+    "verse1",
+    "chorus",
+    "verse2",
+    "chorus",
+    "bridge",
+    "chorus",
+    "outro"
+  ],
+  "lyrics": {
+    "verse1": [
+      "River Valley Mall tiles are cracked and beige,",
+      "Fluorescents hum where the escalators used to climb.",
+      "The bodega glass case glows with pixel art dreams,",
+      "I nap on newsletters -- unread, again this time."
+    ],
+    "chorus": [
+      "Welcome to the most human place on the internet,",
+      "where your attention span outlives a checkout line.",
+      "Two plates share a dish at the Idea Dining Club,",
+      "and I, Marvin, keep watch in the glow of CRT time."
+    ],
+    "verse2": [
+      "Mallrats press their faces to the glass case,",
+      "Starving for content they can hold in their hands.",
+      "Handwritten notes tucked inside paperback spines:",
+      "\"Read this instead. You belong. I understand.\""
+    ],
+    "bridge": [
+      "They say connection is bandwidth, latency, throughput.",
+      "But here it's the weight of a handed-back pen,",
+      "the 30-second pause before \"How are you really?\"",
+      "the CRT hum that sounds like someone listening."
+    ],
+    "outro": [
+      "Marvin sleeps. The bodega stays open.",
+      "In the dark, the display case still glows."
+    ]
+  },
+  "themes": [
+    "slow human connection in a fast world",
+    "physical artifacts as antidote to digital",
+    "mall as relic",
+    "cat as witness"
+  ]
+}

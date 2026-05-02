@@ -1,0 +1,14 @@
+{% extends "admin_dashboard.html" %}
+{% block extra %}
+<h2>Bodega Wall</h2>
+<p class="subtitle">Approve and arrange member photos.</p>
+{% for entry in entries %}
+<div style="border:1px solid #3d3d6b;padding:1rem;margin:0.5rem 0;display:flex;gap:1rem;align-items:center;">
+  <img src="{{ entry.image_url }}" style="width:64px;height:64px;image-rendering:pixelated;">
+  <div>
+    <strong>{{ entry.member.email }}</strong>
+    <br><small>{{ entry.caption or 'No caption' }}</small>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bottega Bodega — The most human place on the internet. River Valley Mall, Lancaster, Ohio. Two membership tiers: Mallrat ($25) and Idea Dining Club ($1,000), plus Marvin Treat (pay what you want).">
+  <meta name="author" content="Leo Guinan">
+  <title>The Bottega Bodega — The Most Human Place on the Internet</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="bodega-style.css">
+
+  <style>
+    .site-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .site-header .shop-logo {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 0.5rem;
+      display: block;
+      image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="site-header">
+    <img src="/icons/shop-icon.png" alt="Bottega Bodega" class="shop-logo">
+  </header>
+
+
+
+  <!-- RPG Header / Shop Sign -->
+  <header class="rpg-header">
+    <div class="container">
+      <!-- shop-sign deprecated: merged into site-header -->
+    <div class="shop-sign">
+      <img src="/icons/shop-icon.png" alt="Bottega Bodega shop" class="shop-logo">
+        <span class="shop-prefix">[</span>
+        <span class="shop-name">BOTTEGA BODEGA</span>
+        <span class="shop-loc">River Valley Mall</span>
+        <span class="shop-suffix">]</span>
+      </div>
+      <p class="shop-tagline">— The Most Human Place on the Internet —</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Intro Text -->
+    <section class="intro" aria-labelledby="intro-heading">
+      <div class="container">
+        <h2 id="intro-heading" class="section-heading">Welcome, Traveler</h2>
+        <p class="intro-text">
+          The Bottega Bodega is a destination, not a trend. Inspired by the Renaissance
+          <em>bottega</em> — the workshop where art and engineering met — this is a place
+          to consume ideas consciously, at human speed. No algorithms. No subscriptions.
+          What you see is what you get.
+        </p>
+        <p class="intro-subtext" style="margin-top: 1rem; font-size: 1rem; color: #888;">
+          <em>"The most human place on the internet."</em><br>
+          — Leo Guinan, May 2026
+        </p>
+      </div>
+    </section>
+
+    <!-- Tier Cards -->
+    
+  <!-- Offer images -->
+  <section class="offer-images">
+    <div class="container" style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0;">
+      <div class="offer-image" style="max-width: 300px; text-align: center;">
+        <img src="/icons/mallrat-offer.png" alt="Mallrat Membership" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); image-rendering: crisp-edges;">
+        <p style="margin-top: 0.5rem; color: #a0a0c0; font-size: 0.9rem;">Mallrat — $25 one-time</p>
+      </div>
+      <div class="offer-image" style="max-width: 300px; text-align: center;">
+        <img src="/icons/dining-offer.png" alt="Idea Dining Club Membership" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); image-rendering: crisp-edges;">
+        <p style="margin-top: 0.5rem; color: #a0a0c0; font-size: 0.9rem;">Idea Dining Club — $1,000 one-time</p>
+      </div>
+    </div>
+  </section>
+
+
+<section class="tiers" aria-labelledby="tiers-heading">
+      <div class="container">
+
+        <h2 id="tiers-heading" class="section-heading">Available Memberships</h2>
+        <p class="tiers-intro" style="text-align: center; color: #a0a0c0; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          The Great Online Game has two players: <strong>Observers</strong> and <strong>Players</strong>.
+          Choose which role you play. All memberships are <strong>one-time fees</strong>.
+          Marvin the Bodega Cat is in residence, serving as your bullshit filter.
+        </p>
+
+        <div class="tier-grid">
+
+          <!-- MALLRAT -->
+          <div class="tier-card mallrat">
+            <div class="tier-header">
+              <img src="/icons/mallrat-icon.png" alt="Mallrat icon" class="tier-icon">
+              <h3 class="tier-title">Mallrat</h3>
+              <div class="tier-subtitle">Observer Membership — One Content Feature on the Wall</div>
+            </div>
+            <div class="tier-price">
+              <span class="currency">$</span>25 <span class="period">one-time</span>
+            </div>
+            <ul class="tier-features">
+              <li>One content recommendation gets featured space on the Bodega wall</li>
+              <li>Personal handwritten note from Leo about its value and impact</li>
+              <li>Printed transcript of the note (handwriting practice in progress)</li>
+              <li>Permanent placement in the Bodega collection</li>
+              <li>You are an <strong>Observer</strong> in the Great Online Game</li>
+            </ul>
+            <div class="tier-flavor">
+              <span class="flavor-label">For:</span> Those who miss the mall they grew up in. The ones who dreamed of getting out, then realized they never wanted to leave.
+            </div>
+            <button class="buy-button" data-tier="mallrat" data-amount="25" data-price-id="price_1TSMv5GzXpChNrVvIYnZf7ZG">Become an Observer</button>
+          </div>
+
+          <!-- MARVIN TREAT -->
+          <div class="tier-card marvin-treat">
+            <div class="tier-header">
+              <div class="tier-icon" style="font-size: 2.5rem; line-height: 64px;">🐱</div>
+              <h3 class="tier-title">Marvin Treat</h3>
+              <div class="tier-subtitle">Pay What You Want — Random Reward from the Cat</div>
+            </div>
+            <div class="tier-price">
+              <span class="currency">$</span>? <span class="period">you decide</span>
+            </div>
+            <ul class="tier-features">
+              <li>Leave a tip for Marvin the Bodega Cat</li>
+              <li>Receive a <strong>random reward</strong> in return — could be content, advice, a ballad, or something else entirely</li>
+              <li>No expectations. Just gratitude, circulated.</li>
+              <li>Marvin's way of saying <em>"meow"</em></li>
+            </ul>
+            <div class="tier-flavor">
+              <span class="flavor-label">For:</span> Anyone who appreciates the absurdity of it all. Those who understand that sometimes the best things in life are random.
+            </div>
+            <button class="buy-button marvin" data-tier="marvin-treat" data-amount="0" data-price-id="price_1TSMxwGzXpChNrVvK8mGuDJb">Leave a Treat</button>
+          </div>
+
+          <!-- IDEA DINING CLUB -->
+          <div class="tier-card dining-club">
+            <div class="tier-badge">PLAYER</div>
+            <div class="tier-header">
+              <img src="/icons/dining-icon.png" alt="Idea Dining Club icon" class="tier-icon">
+              <h3 class="tier-title">Idea Dining Club</h3>
+              <div class="tier-subtitle">Player Membership — A Seat at the Table</div>
+            </div>
+            <div class="tier-price">
+              <span class="currency">$</span>1,000 <span class="period">one-time</span>
+            </div>
+            <ul class="tier-features">
+              <li>Lifetime access to all Bottega Bodega special events and dinners</li>
+              <li>Personalized "tasting menu" — a curated content diet designed for you</li>
+              <li>Your picture (or symbol) on the Bodega Wall of Patrons</li>
+              <li><strong>Marvin the Bodega Cat composes a ballad of your exploits</strong></li>
+              <li>Slow, intentional consumption at human speed</li>
+              <li>Ongoing value as the project grows</li>
+              <li>You are a <strong>Player</strong> in the Great Online Game</li>
+            </ul>
+            <div class="tier-flavor">
+              <span class="flavor-label">For:</span> Those ready to develop their content diet. Who want to learn the difference between noise and signal. The ones moving at the speed of reality.
+            </div>
+            <button class="buy-button premium" data-tier="dining-club" data-amount="1000" data-price-id="price_1TSMw8GzXpChNrVv7BTIUT0z">Join the Club</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Info -->
+    <section class="details" aria-labelledby="details-heading">
+      <div class="container">
+        <h2 id="details-heading" class="section-heading">Location & Details</h2>
+        <div class="details-grid">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span class="detail-text">River Valley Mall, Lancaster, Ohio</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">🐱</span>
+            <span class="detail-text">Marvin the Bodega Cat in residence</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏱️</span>
+            <span class="detail-text">No subscriptions. No upsells. One-time purchases only.</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">📜</span>
+            <a href="/terms.html" class="detail-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Leo Guinan / MetaSPN</p>
+      <p>River Valley Mall, Lancaster, Ohio — Half-dead mall, full of possibility</p>
+      <p><a href="https://aiforlancaster.com">Back to AI for Lancaster</a></p>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #555;">
+        <em>"Marvin is my bullshit filter."</em><br>
+        — Leo Guinan, <a href="https://hitchhikertothefuture.substack.com/p/81b53872-32ba-4024-9bea-01b8961688ff" target="_blank">"Welcome to the Bottega Bodega"</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    // Initialize Stripe with publishable key
+    const stripe = Stripe('pk_live_51OtxcRGzXpChNrVvh6NKNwvR69xNueeF04jtTTfXaaYKjl9YMXsQ8NnKt3vGlXSEBSgdQAc0G4b52hvUjaA6lG2K009uvlQEc1');
+
+    document.querySelectorAll('.buy-button').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const tier = btn.dataset.tier;
+        const priceId = btn.dataset.priceId;
+
+        if (!priceId) {
+          alert('Checkout unavailable — price not configured.');
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Loading...';
+
+        try {
+          const response = await fetch('https://api.bodega.aiforlancaster.com/api/create-checkout-session', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({tier, price_id: priceId})
+          });
+          const data = await response.json();
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            alert('Checkout unavailable. Try again later.');
+            btn.disabled = false;
+            btn.textContent = tier === 'mallrat' ? 'Become an Observer' :
+                             tier === 'dining-club' ? 'Join the Club' :
+                             'Leave a Treat';
+          }
+        } catch (err) {
+          console.error('Checkout error:', err);
+          alert('Checkout failed. Try again later.');
+          btn.disabled = false;
+          btn.textContent = tier === 'mallrat' ? 'Become an Observer' :
+                           tier === 'dining-club' ? 'Join the Club' :
+                           'Leave a Treat';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
