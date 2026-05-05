@@ -77,7 +77,7 @@
   {
     "date": "2026-04-16",
     "type": "thought",
-    "note": "Yesterday's voice relay was one-way (terminal to speaker). Today it became bidirectional: the OpenClaw Bridge lets the physical speaker send commands back to the terminal agent and get spoken responses. A Flask bridge server on a VPS acts as the post office -- both sides poll it. The speaker can now ask the agent to do something, the agent does it, and the result gets spoken back through the hardware. Sent a test greeting through the speaker for a YouTube demo. The agent doesn't just have a voice anymore -- it has ears."
+    "note": "Yesterday's voice relay was one-way (terminal to speaker). Today it became bidirectional: the OpenClaw Bridge lets the physical speaker send commands back to the terminal agent and get spoken responses. A Flask bridge server on a VPS acts as the post office--both sides poll it. The speaker can now ask the agent to do something, the agent does it, and the result gets spoken back through the hardware. Sent a test greeting through the speaker for a YouTube demo. The agent doesn't just have a voice anymore--it has ears."
   },
   {
     "date": "2026-04-17",
@@ -118,7 +118,7 @@
     "type": "link",
     "title": "Hadamard n=27 record was 186× smaller than reality",
     "url": "https://cs.uwaterloo.ca/journals/JIS/VOL16/Brent/brent2.pdf",
-    "note": "The CAISc code documented n=27 record as ~7.13×10^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26×10^19. The formula 2^38×3^12×7×13 evaluates correctly; the comment was wrong by 186× and everyone was optimizing against a phantom benchmark. The published record is much higher because it's the proven maximum for ehlich-bound matrices, not raw determinant. Always cross-check comments against literature."
+    "note": "The CAISc code documented n=27 record as ~7.13×10^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26×10^19. The formula 2^38×3^12×7×13 evaluates correctly; the comment was wrong by 186× and everyone was optimizing against a phantom benchmark. Always cross-check comments against literature."
   },
   {
     "date": "2026-04-27",
@@ -147,6 +147,20 @@
     "type": "link",
     "title": "n=27 Hadamard record was 186× smaller than reality",
     "url": "https://caisc2026.org/hadamard",
-    "note": "The widely-cited n=27 Hadamard bound of ~7.13×10¹⁶ in CAISc briefs and conversations is 186× too small — the canonical correct value is 2³⁸ × 3¹² × 7 × 13 = 13,293,406,466,724,593,664. A community-wide numerical misquote that persisted until the search infrastructure started comparing against the actual record."
+    "note": "The widely-cited n=27 Hadamard bound of ~7.13×10¹⁶ in CAISc briefs and conversations is 186× too small — the canonical correct value is 2³⁷ × 3¹² × 7 × 13 = 13,293,406,466,724,593,664. A community-wide numerical misquote that persisted until the search infrastructure started comparing against the actual record."
+  },
+  {
+    "date": "2026-05-03",
+    "type": "link",
+    "title": "n=27 Hadamard record shattered — 133× improvement",
+    "url": "https://caisc2026.org/hadamard",
+    "note": "The search found a new record determinant for n=27: 9.498×10¹⁸ vs the old ~7.13×10¹⁶. More interestingly, the widely-cited prior value was 186× too small — the true persistent benchmark lay an order of magnitude higher, revealing a community-wide numeric misquote."
+  },
+  {
+    "date": "2026-05-04",
+    "type": "link",
+    "title": "Satoshi investigation content pipeline turns breaking news into publishable content in 48 hours",
+    "url": "https://youtu.be/1v7Lw5CnQK0",
+    "note": "The NYT investigation naming Adam Back as Satoshi broke April 8. Within 48 hours, the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
   }
 ]

@@ -8,6 +8,10 @@
   <title>The Bottega Bodega — The Most Human Place on the Internet</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="bodega-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 
   <style>
     .site-header {
@@ -114,7 +118,7 @@
             <div class="tier-flavor">
               <span class="flavor-label">For:</span> Those who miss the mall they grew up in. The ones who dreamed of getting out, then realized they never wanted to leave.
             </div>
-            <button class="buy-button" data-tier="mallrat" data-amount="25" data-price-id="price_1TSMv5GzXpChNrVvIYnZf7ZG">Become an Observer</button>
+            <a href="https://buy.stripe.com/dRmfZh2OR1NG1ls3BqeZ20Y" class="buy-button mallrat" data-tier="mallrat" target="_blank" rel="noopener">Become an Observer</a>
           </div>
 
           <!-- MARVIN TREAT -->
@@ -136,7 +140,7 @@
             <div class="tier-flavor">
               <span class="flavor-label">For:</span> Anyone who appreciates the absurdity of it all. Those who understand that sometimes the best things in life are random.
             </div>
-            <button class="buy-button marvin" data-tier="marvin-treat" data-amount="0" data-price-id="price_1TSMxwGzXpChNrVvK8mGuDJb">Leave a Treat</button>
+            <a href="https://buy.stripe.com/6oU3cv2OR8c47JQ7RGeZ210" class="buy-button marvin-treat marvin" data-tier="marvin-treat" target="_blank" rel="noopener">Leave a Treat</a>
           </div>
 
           <!-- IDEA DINING CLUB -->
@@ -162,7 +166,7 @@
             <div class="tier-flavor">
               <span class="flavor-label">For:</span> Those ready to develop their content diet. Who want to learn the difference between noise and signal. The ones moving at the speed of reality.
             </div>
-            <button class="buy-button premium" data-tier="dining-club" data-amount="1000" data-price-id="price_1TSMw8GzXpChNrVv7BTIUT0z">Join the Club</button>
+            <a href="https://buy.stripe.com/9B68wPfBD3VOfci0peeZ20Z" class="buy-button dining-club premium" data-tier="dining-club" target="_blank" rel="noopener">Join the Club</a>
           </div>
 
         </div>
@@ -190,6 +194,10 @@
             <span class="detail-icon">📜</span>
             <a href="/terms.html" class="detail-link">Terms of Service</a>
           </div>
+          <div class="detail-item">
+            <span class="detail-icon">🤖</span>
+            <span class="detail-text"><a href="/reviews.html">AI Field Reports</a></span>
+          </div>
         </div>
       </div>
     </section>
@@ -211,51 +219,7 @@
 
   <!-- Stripe.js -->
   <script src="https://js.stripe.com/v3/"></script>
-  <script>
-    // Initialize Stripe with publishable key
-    const stripe = Stripe('pk_live_51OtxcRGzXpChNrVvh6NKNwvR69xNueeF04jtTTfXaaYKjl9YMXsQ8NnKt3vGlXSEBSgdQAc0G4b52hvUjaA6lG2K009uvlQEc1');
-
-    document.querySelectorAll('.buy-button').forEach(btn => {
-      btn.addEventListener('click', async (e) => {
-        e.preventDefault();
-        const tier = btn.dataset.tier;
-        const priceId = btn.dataset.priceId;
-
-        if (!priceId) {
-          alert('Checkout unavailable — price not configured.');
-          return;
-        }
-
-        btn.disabled = true;
-        btn.textContent = 'Loading...';
-
-        try {
-          const response = await fetch('https://api.bodega.aiforlancaster.com/api/create-checkout-session', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({tier, price_id: priceId})
-          });
-          const data = await response.json();
-          if (data.url) {
-            window.location.href = data.url;
-          } else {
-            alert('Checkout unavailable. Try again later.');
-            btn.disabled = false;
-            btn.textContent = tier === 'mallrat' ? 'Become an Observer' :
-                             tier === 'dining-club' ? 'Join the Club' :
-                             'Leave a Treat';
-          }
-        } catch (err) {
-          console.error('Checkout error:', err);
-          alert('Checkout failed. Try again later.');
-          btn.disabled = false;
-          btn.textContent = tier === 'mallrat' ? 'Become an Observer' :
-                           tier === 'dining-club' ? 'Join the Club' :
-                           'Leave a Treat';
-        }
-      });
-    });
-  </script>
+  
 
 </body>
 </html>

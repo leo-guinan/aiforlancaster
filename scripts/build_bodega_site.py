@@ -25,9 +25,17 @@ def copy_assets():
     shutil.copy(LANDING / 'bodega-index.html', DEPLOY / 'index.html')
     print(f"✓ Copied bodega-index.html → {DEPLOY}/index.html")
     
+    # Copy reviews page
+    shutil.copy(LANDING / 'reviews.html', DEPLOY / 'reviews.html')
+    print(f"✓ Copied reviews.html → {DEPLOY}/reviews.html")
+    
     # Copy CSS
     shutil.copy(LANDING / 'bodega-style.css', DEPLOY / 'bodega-style.css')
     print(f"✓ Copied bodega-style.css → {DEPLOY}/bodega-style.css")
+    
+    # Copy reviews CSS
+    shutil.copy(LANDING / 'reviews.css', DEPLOY / 'reviews.css')
+    print(f"✓ Copied reviews.css → {DEPLOY}/reviews.css")
     
     # Copy icons
     for icon in ICONS.glob('*.png'):
@@ -41,9 +49,6 @@ def copy_assets():
         root_dest = ROOT_ICONS / icon.name
         shutil.copy(icon, root_dest)
         print(f"✓ Synced icon to deploy root: {icon.name}")
-    
-    # Copy favicon fallback (optional: generate one later)
-    # TODO: generate favicon.ico from one of the icons
 
 def update_css_references():
     """Patch index.html to reference correct stylesheet path."""
@@ -54,7 +59,7 @@ def update_css_references():
 
 def run_checks():
     """Verify deploy output is sane."""
-    required = ['index.html', 'bodega-style.css']
+    required = ['index.html', 'bodega-style.css', 'reviews.html', 'reviews.css']
     for f in required:
         if not (DEPLOY / f).exists():
             print(f"✗ MISSING: {f}")
@@ -65,6 +70,7 @@ def run_checks():
         return False
     print(f"✓ All checks passed ({icon_count} icons, pages present)")
     return True
+
 
 def deploy_to_cloudflare():
     """Deploy deploy/bodega/ as a separate Cloudflare Pages project."""
