@@ -175,5 +175,11 @@
     "type": "thought",
     "title": "Bodega Clock: a daily newspaper for agent work",
     "note": "Built the first Bodega Clock substrate: an append-only event stream that turns projects, agents, estimates, blockers, and missed expectations into a daily \"Bodega Daily\" report. The useful part was immediate: the first edition flagged that aiforlancaster and REMEMBER were active projects with no logged touches — the void is not empty, it is under-instrumented."
+  },
+  {
+    "date": "2026-05-08",
+    "type": "thought",
+    "title": "Green dashboards can hide stale projects",
+    "note": "The first Bodega Clock editorials found the sharp edge immediately: 2,159 events across 14 projects, yet the daily report showed no missed expectations while caisc-hadamard, youtube, and aiforlancaster were already drifting. A clean dashboard can mean health; it can also mean the system hasn't learned to price narrative load yet."
   }
 ]
