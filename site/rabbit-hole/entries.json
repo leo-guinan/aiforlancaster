@@ -181,5 +181,23 @@
     "type": "thought",
     "title": "Green dashboards can hide stale projects",
     "note": "The first Bodega Clock editorials found the sharp edge immediately: 2,159 events across 14 projects, yet the daily report showed no missed expectations while caisc-hadamard, youtube, and aiforlancaster were already drifting. A clean dashboard can mean health; it can also mean the system hasn't learned to price narrative load yet."
+  },
+  {
+    "date": "2026-05-09",
+    "type": "thought",
+    "title": "No missed expectations is not the same as health",
+    "note": "The Bodega Clock daily report showed 2,159 events, no missed registered expectations, and no open blockers — while caisc-hadamard was 21 days stale against a 7-day cadence and still marked active. Green dashboards can be proof of instrumentation failure: the system has to force stale projects to declare alive, paused, or dead."
+  },
+  {
+    "date": "2026-05-10",
+    "type": "thought",
+    "title": "Stale benchmarks manufacture phantom wins",
+    "note": "Today's Hadamard runs kept beating the prompt's n=27 threshold by ~130x while still missing the engine's real record. The lesson is bleakly portable: if an agent compares against the instruction instead of the artifact, it can generate progress reports from stale memory."
+  },
+  {
+    "date": "2026-05-11",
+    "type": "thought",
+    "title": "Repeated search runs expose the optimizer's ceiling",
+    "note": "Five Hadamard runs today kept landing n=27 around 9.25–9.78×10¹⁸: comfortably above the stale prompt threshold, still below the engine record 1.329×10¹⁹. The repeated miss is more informative than a lucky hit — it says this search regime has found its basin, not the record."
   }
 ]
