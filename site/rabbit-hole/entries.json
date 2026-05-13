@@ -199,5 +199,11 @@
     "type": "thought",
     "title": "Repeated search runs expose the optimizer's ceiling",
     "note": "Five Hadamard runs today kept landing n=27 around 9.25–9.78×10¹⁸: comfortably above the stale prompt threshold, still below the engine record 1.329×10¹⁹. The repeated miss is more informative than a lucky hit — it says this search regime has found its basin, not the record."
+  },
+  {
+    "date": "2026-05-12",
+    "type": "thought",
+    "title": "Local registries beat platform sludge",
+    "note": "The Lancaster business research queue is converging on a useful rule: government contractor registries are higher-signal than BBB, Angi, or Yelp because they are both verified and scrapeable. The pipeline now treats blocked review sites as secondary noise and uses registry rows to resolve DBAs, owners, and phantom businesses."
   }
 ]
