@@ -1,0 +1,419 @@
+{
+  "date": "2026-05-25",
+  "interest_over_time": {
+    "AI for business": {
+      "recent_avg": 0.0,
+      "prior_avg": 0.0,
+      "pct_change": 2.3,
+      "direction": "\u2192"
+    },
+    "chatgpt": {
+      "recent_avg": 49.4,
+      "prior_avg": 67.6,
+      "pct_change": -27.0,
+      "direction": "\u2193"
+    },
+    "voice agent": {
+      "recent_avg": 0.0,
+      "prior_avg": 0.0,
+      "pct_change": 0.0,
+      "direction": "\u2192"
+    },
+    "small business automation": {
+      "recent_avg": 0.0,
+      "prior_avg": 0.0,
+      "pct_change": 0.0,
+      "direction": "\u2192"
+    },
+    "AI assistant": {
+      "recent_avg": 0.0,
+      "prior_avg": 0.0,
+      "pct_change": -3.6,
+      "direction": "\u2192"
+    }
+  },
+  "rising_queries": {
+    "AI": [
+      {
+        "query": "berkshire hathaway ai stock portfolio",
+        "value": 11750
+      },
+      {
+        "query": "t-mobile ai network management",
+        "value": 4700
+      },
+      {
+        "query": "ai final fantasy 6 remake",
+        "value": 3000
+      },
+      {
+        "query": "alphabet ai growth stocks",
+        "value": 1950
+      },
+      {
+        "query": "open ai ipo",
+        "value": 350
+      },
+      {
+        "query": "pizza hut dragontail ai lawsuit",
+        "value": 150
+      },
+      {
+        "query": "darlink ai",
+        "value": 70
+      },
+      {
+        "query": "perchance ai image generator",
+        "value": 50
+      }
+    ],
+    "automation": [
+      {
+        "query": "robotic process automation tools",
+        "value": 25950
+      },
+      {
+        "query": "robotics process automation",
+        "value": 24100
+      },
+      {
+        "query": "ats industrial automation",
+        "value": 8600
+      },
+      {
+        "query": "marketing automation agency",
+        "value": 550
+      },
+      {
+        "query": "allied automation",
+        "value": 400
+      },
+      {
+        "query": "smart home automation system",
+        "value": 350
+      },
+      {
+        "query": "jr automation",
+        "value": 300
+      },
+      {
+        "query": "automation system integration",
+        "value": 300
+      },
+      {
+        "query": "industrial process automation",
+        "value": 250
+      },
+      {
+        "query": "premier automation",
+        "value": 200
+      },
+      {
+        "query": "industrial automation systems",
+        "value": 190
+      },
+      {
+        "query": "alliance automation",
+        "value": 110
+      },
+      {
+        "query": "automation plastics",
+        "value": 110
+      },
+      {
+        "query": "robotic process automation",
+        "value": 100
+      },
+      {
+        "query": "factory automation",
+        "value": 50
+      },
+      {
+        "query": "automation industrial",
+        "value": 50
+      }
+    ],
+    "small business": [
+      {
+        "query": "5k small business grant",
+        "value": 12500
+      },
+      {
+        "query": "small business insurance for llc",
+        "value": 550
+      },
+      {
+        "query": "small business internet providers",
+        "value": 300
+      },
+      {
+        "query": "small business bookkeeping near me",
+        "value": 250
+      },
+      {
+        "query": "small business accountant near me",
+        "value": 150
+      },
+      {
+        "query": "debt collector for small business",
+        "value": 100
+      },
+      {
+        "query": "bank of america small business login",
+        "value": 90
+      },
+      {
+        "query": "best small business accounting software",
+        "value": 70
+      },
+      {
+        "query": "small business phone plans",
+        "value": 60
+      },
+      {
+        "query": "payroll services for small business",
+        "value": 60
+      },
+      {
+        "query": "small business loans ohio",
+        "value": 50
+      },
+      {
+        "query": "small business electricity",
+        "value": 50
+      },
+      {
+        "query": "accountant for small business near me",
+        "value": 50
+      },
+      {
+        "query": "spectrum small business",
+        "value": 50
+      },
+      {
+        "query": "small business marketing agency",
+        "value": 40
+      }
+    ]
+  },
+  "reddit": {
+    "lancaster": [
+      {
+        "title": "Shout Out to Reel Cinema",
+        "score": 276,
+        "comments": 33,
+        "url": "https://reddit.com/r/lancaster/comments/1tgp6xs/shout_out_to_reel_cinema/",
+        "flair": null
+      },
+      {
+        "title": "No idea who put this billboard up on rt. 30, but thank you for the daily affirmation on my work commute",
+        "score": 256,
+        "comments": 12,
+        "url": "https://reddit.com/r/lancaster/comments/1tmv8o0/no_idea_who_put_this_billboard_up_on_rt_30_but/",
+        "flair": null
+      },
+      {
+        "title": "It\u2019s Official: Nancy Mannion Wins Primary. Smucker Is Next",
+        "score": 256,
+        "comments": 43,
+        "url": "https://reddit.com/r/lancaster/comments/1tjj3mh/its_official_nancy_mannion_wins_primary_smucker/",
+        "flair": null
+      },
+      {
+        "title": "Listing of maga friendly restaurants?",
+        "score": 218,
+        "comments": 241,
+        "url": "https://reddit.com/r/lancaster/comments/1tktczo/listing_of_maga_friendly_restaurants/",
+        "flair": null
+      },
+      {
+        "title": "Found: Ham",
+        "score": 213,
+        "comments": 25,
+        "url": "https://reddit.com/r/lancaster/comments/1thk1ks/found_ham/",
+        "flair": "City Life"
+      },
+      {
+        "title": "Need some Lancaster kindness please",
+        "score": 175,
+        "comments": 29,
+        "url": "https://reddit.com/r/lancaster/comments/1tiwfer/need_some_lancaster_kindness_please/",
+        "flair": null
+      },
+      {
+        "title": "Dayspring Christian Academy in Lancaster County notifies families of a potential measles exposure",
+        "score": 160,
+        "comments": 47,
+        "url": "https://reddit.com/r/lancaster/comments/1tivtbr/dayspring_christian_academy_in_lancaster_county/",
+        "flair": "Happening"
+      },
+      {
+        "title": "Lost pup at the Hager parking lot / central market",
+        "score": 139,
+        "comments": 19,
+        "url": "https://reddit.com/r/lancaster/comments/1tjk358/lost_pup_at_the_hager_parking_lot_central_market/",
+        "flair": null
+      },
+      {
+        "title": "The Columbia data center conversation just got bigger",
+        "score": 126,
+        "comments": 10,
+        "url": "https://reddit.com/r/lancaster/comments/1tkn5m5/the_columbia_data_center_conversation_just_got/",
+        "flair": "News"
+      },
+      {
+        "title": "Chestnut Hill Trinket Trade CLOSED",
+        "score": 121,
+        "comments": 37,
+        "url": "https://reddit.com/r/lancaster/comments/1tix1ai/chestnut_hill_trinket_trade_closed/",
+        "flair": null
+      }
+    ],
+    "Columbus": [
+      {
+        "title": "I\u2019d love to see Columbus do this too",
+        "score": 1114,
+        "comments": 169,
+        "url": "https://reddit.com/r/Columbus/comments/1thilvp/id_love_to_see_columbus_do_this_too/",
+        "flair": "PHOTO"
+      },
+      {
+        "title": "Horrible Experience at Woodlands Tavern",
+        "score": 973,
+        "comments": 273,
+        "url": "https://reddit.com/r/Columbus/comments/1tlyfnl/horrible_experience_at_woodlands_tavern/",
+        "flair": "PHOTO"
+      },
+      {
+        "title": "Come drink a dr pepper with me!!!",
+        "score": 917,
+        "comments": 117,
+        "url": "https://reddit.com/r/Columbus/comments/1tktc1p/come_drink_a_dr_pepper_with_me/",
+        "flair": null
+      },
+      {
+        "title": "Multiple former LifeWise affiliates charged with unrelated sex crimes against minors",
+        "score": 885,
+        "comments": 107,
+        "url": "https://reddit.com/r/Columbus/comments/1tkf61a/multiple_former_lifewise_affiliates_charged_with/",
+        "flair": null
+      },
+      {
+        "title": "Lifewise",
+        "score": 839,
+        "comments": 79,
+        "url": "https://reddit.com/r/Columbus/comments/1tkjl4h/lifewise/",
+        "flair": null
+      },
+      {
+        "title": "Flock Awareness Signs",
+        "score": 801,
+        "comments": 79,
+        "url": "https://reddit.com/r/Columbus/comments/1thyven/flock_awareness_signs/",
+        "flair": "PHOTO"
+      },
+      {
+        "title": "Are you seeing this??",
+        "score": 772,
+        "comments": 159,
+        "url": "https://reddit.com/r/Columbus/comments/1ti50ur/are_you_seeing_this/",
+        "flair": "PHOTO"
+      },
+      {
+        "title": "bruno mars traffic",
+        "score": 717,
+        "comments": 175,
+        "url": "https://reddit.com/r/Columbus/comments/1tj2ofh/bruno_mars_traffic/",
+        "flair": null
+      },
+      {
+        "title": "In Columbus, there\u2019s only one Gender (and it\u2019s horrible)",
+        "score": 660,
+        "comments": 58,
+        "url": "https://reddit.com/r/Columbus/comments/1tjzqd9/in_columbus_theres_only_one_gender_and_its/",
+        "flair": "HUMOR"
+      },
+      {
+        "title": "I analyzed 676,000 Columbus bird sightings. Almost every rare species in Franklin County funnels to the same few parks.",
+        "score": 638,
+        "comments": 81,
+        "url": "https://reddit.com/r/Columbus/comments/1tj2sip/i_analyzed_676000_columbus_bird_sightings_almost/",
+        "flair": null
+      }
+    ],
+    "smallbusiness": [
+      {
+        "title": "A plea from a guy who literally provides business funding: stop talking out loans you don't actually need.",
+        "score": 427,
+        "comments": 93,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tj9iay/a_plea_from_a_guy_who_literally_provides_business/",
+        "flair": null
+      },
+      {
+        "title": "Restaurant owners, what\u2019s actually working right now to attract good employees? We are struggling.",
+        "score": 136,
+        "comments": 111,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tgr0rb/restaurant_owners_whats_actually_working_right/",
+        "flair": null
+      },
+      {
+        "title": "What\u2019s the best money you ever made from a random one time thing?",
+        "score": 122,
+        "comments": 213,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tktfml/whats_the_best_money_you_ever_made_from_a_random/",
+        "flair": null
+      },
+      {
+        "title": "Do people actually support handmade businesses\u2026 or just admire them?",
+        "score": 104,
+        "comments": 224,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tihj3s/do_people_actually_support_handmade_businesses_or/",
+        "flair": null
+      },
+      {
+        "title": "Small business owners with 20+ employees, is company swag still valuable or just another unnecessary stereotype?",
+        "score": 78,
+        "comments": 112,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tiqccd/small_business_owners_with_20_employees_is/",
+        "flair": null
+      },
+      {
+        "title": "What was THE thing that really got your business off the ground?",
+        "score": 71,
+        "comments": 71,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tmdmou/what_was_the_thing_that_really_got_your_business/",
+        "flair": null
+      },
+      {
+        "title": "How do you guys deal with people saying your stuff is overpriced?",
+        "score": 70,
+        "comments": 164,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tkgrxu/how_do_you_guys_deal_with_people_saying_your/",
+        "flair": null
+      },
+      {
+        "title": "What\u2019s something you thought was unnecessary business bullshit when you first started\u2026 but now completely understand?",
+        "score": 65,
+        "comments": 62,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tjz4s3/whats_something_you_thought_was_unnecessary/",
+        "flair": null
+      },
+      {
+        "title": "People who started businesses in their 20s: what helped most",
+        "score": 60,
+        "comments": 66,
+        "url": "https://reddit.com/r/smallbusiness/comments/1tib6m0/people_who_started_businesses_in_their_20s_what/",
+        "flair": null
+      },
+      {
+        "title": "How to start a business without money when you're working full-time?",
+        "score": 54,
+        "comments": 83,
+        "url": "https://reddit.com/r/smallbusiness/comments/1ti84l2/how_to_start_a_business_without_money_when_youre/",
+        "flair": null
+      }
+    ],
+    "AIBusiness": []
+  },
+  "report": "LANCASTER / COLUMBUS DMA TRENDS \u2014 2026-05-25\n==================================================\n\nSEARCH MOMENTUM (Ohio, past 7 days vs prior 7 days)\n----------------------------------------\n  \u2193 chatgpt                         -27%  (index: 49)\n  \u2192 AI assistant                    -4%  (index: 0)\n  \u2192 AI for business                 +2%  (index: 0)\n  \u2192 voice agent                     +0%  (index: 0)\n  \u2192 small business automation       +0%  (index: 0)\n\nRISING QUERIES (Ohio, past 7 days, business-relevant)\n----------------------------------------\n  Breakout    robotic process automation tools  [via: automation]\n  Breakout    robotics process automation  [via: automation]\n  Breakout    5k small business grant  [via: small business]\n  Breakout    berkshire hathaway ai stock portfolio  [via: AI]\n  Breakout    ats industrial automation  [via: automation]\n  +4700%      t-mobile ai network management  [via: AI]\n  +3000%      ai final fantasy 6 remake  [via: AI]\n  +1950%      alphabet ai growth stocks  [via: AI]\n  +550%       marketing automation agency  [via: automation]\n  +550%       small business insurance for llc  [via: small business]\n  +400%       allied automation  [via: automation]\n  +350%       open ai ipo  [via: AI]\n  +350%       smart home automation system  [via: automation]\n  +300%       jr automation  [via: automation]\n  +300%       automation system integration  [via: automation]\n\nREDDIT SIGNAL (r/lancaster + r/smallbusiness + r/AIBusiness)\n----------------------------------------\n  [Columbus] I\u2019d love to see Columbus do this too\n         \u21911114  169 comments\n  [Columbus] Multiple former LifeWise affiliates charged with unrelated sex crimes against mi\n         \u2191885  107 comments\n  [Columbus] In Columbus, there\u2019s only one Gender (and it\u2019s horrible)\n         \u2191660  58 comments\n  [Columbus] I analyzed 676,000 Columbus bird sightings. Almost every rare species in Frankli\n         \u2191638  81 comments\n  [smallbusiness] A plea from a guy who literally provides business funding: stop talking out loan\n         \u2191427  93 comments\n  [lancaster] Shout Out to Reel Cinema\n         \u2191276  33 comments\n  [lancaster] No idea who put this billboard up on rt. 30, but thank you for the daily affirma\n         \u2191256  12 comments\n  [lancaster] It\u2019s Official: Nancy Mannion Wins Primary. Smucker Is Next\n         \u2191256  43 comments\n  [lancaster] Listing of maga friendly restaurants?\n         \u2191218  241 comments\n  [lancaster] Found: Ham\n         \u2191213  25 comments\n\nDATA LIMITATIONS\n----------------------------------------\n  \u2022 Google Trends resolves to Columbus DMA (not city-level)\n  \u2022 Rising = breakout or % increase vs prior period, not absolute volume\n  \u2022 Reddit r/lancaster is small \u2014 signal is sparse\n  \u2022 GSC data pending (wire up after domain verification)\n"
+}
