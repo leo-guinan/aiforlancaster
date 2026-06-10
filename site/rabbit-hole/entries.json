@@ -4,7 +4,7 @@
     "type": "link",
     "title": "Entropy conservation in biological oscillatory systems",
     "url": "https://doi.org/10.5281/zenodo.19432642",
-    "note": "Three independent groups converged on the same 6-octave recursive hierarchy. Sam's 6 in 6π⁵ = Walter's 3 planes × 2 sheets. The CV of 0.018 shouldn't be that low by accident."
+    "note": "Three independent groups converged on the same 6-octave recursive hierarchy. Sam's 6 in 6\u03c0\u2075 = Walter's 3 planes \u00d7 2 sheets. The CV of 0.018 shouldn't be that low by accident."
   },
   {
     "date": "2026-04-07",
@@ -16,58 +16,58 @@
     "type": "link",
     "title": "ARC-AGI-3 Benchmark Progress",
     "url": "https://arcprize.org",
-    "note": "96/127 levels banked (75.6%). The remaining games need different strategies — not more compute, different thinking."
+    "note": "96/127 levels banked (75.6%). The remaining games need different strategies \u2014 not more compute, different thinking."
   },
   {
     "date": "2026-04-08",
     "type": "link",
     "title": "First analytics data on a site less than 24 hours old",
     "url": "https://www.aiforlancaster.com",
-    "note": "13 unique visitors, 2 from Google organic on day one. The site got indexed and clicked within hours of going live. Previous attempts at higher-complexity work never got this — the formula inverted. Simple language, local problem, practical guides. That's the entropy surface thesis in action: when the content matches what people actually search for, the feedback loop starts immediately."
+    "note": "13 unique visitors, 2 from Google organic on day one. The site got indexed and clicked within hours of going live. Previous attempts at higher-complexity work never got this \u2014 the formula inverted. Simple language, local problem, practical guides. That's the entropy surface thesis in action: when the content matches what people actually search for, the feedback loop starts immediately."
   },
   {
     "date": "2026-04-08",
     "type": "link",
-    "title": "Clicky → Marvin: hacking an open-source AI cursor companion into a paranoid focus coach",
+    "title": "Clicky \u2192 Marvin: hacking an open-source AI cursor companion into a paranoid focus coach",
     "url": "https://github.com/farzaa/clicky",
-    "note": "Clicky is a macOS app that lives next to your cursor — it sees your screen and talks to you. Rewrote the system prompt to watch for context-switching and point at things you're avoiding. The AI uses [POINT:x,y] tags to literally gesture at your terminal when you're stuck in a Notion doc. Best use of a pointing cursor I've seen."
+    "note": "Clicky is a macOS app that lives next to your cursor \u2014 it sees your screen and talks to you. Rewrote the system prompt to watch for context-switching and point at things you're avoiding. The AI uses [POINT:x,y] tags to literally gesture at your terminal when you're stuck in a Notion doc. Best use of a pointing cursor I've seen."
   },
   {
     "date": "2026-04-08",
     "type": "thought",
-    "note": "The Closure geometry σ metric turns out to be a universal game-mechanic classifier. σ < 0.01 = no-op, 0.01–0.1 = movement, 0.1–0.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S³ isn't just a computation cost — it's a measurement tool. A field guide agent that classifies games by σ signature before choosing a solver strategy is a naturalist, not a brute-force search."
+    "note": "The Closure geometry \u03c3 metric turns out to be a universal game-mechanic classifier. \u03c3 < 0.01 = no-op, 0.01\u20130.1 = movement, 0.1\u20130.5 = push/interact, > 0.5 = click/select. The geodesic distance from identity on S\u00b3 isn't just a computation cost \u2014 it's a measurement tool. A field guide agent that classifies games by \u03c3 signature before choosing a solver strategy is a naturalist, not a brute-force search."
   },
   {
     "date": "2026-04-09",
     "type": "thought",
-    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops — the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
+    "note": "The OpenHome dev kit changes the aiforlancaster model from 'read a guide' to 'receive a device.' A pre-configured AI speaker for bakeries, HVAC shops \u2014 the hardware becomes the distribution channel for the book's ideas. The AI voice agent calls the business owner as the demo itself. If the outbound call is impressive enough, the physical device sells itself before it arrives."
   },
   {
     "date": "2026-04-10",
     "type": "link",
-    "title": "NYT identifies Adam Back as Satoshi — and the content pipeline that caught it",
+    "title": "NYT identifies Adam Back as Satoshi \u2014 and the content pipeline that caught it",
     "url": "https://youtu.be/1v7Lw5CnQK0",
-    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
+    "note": "The NYT investigation naming Adam Back as Satoshi Nakamoto broke April 8. Within 48 hours the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim \u2014 it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
   },
   {
     "date": "2026-04-11",
     "type": "thought",
-    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through — +0.006 OOF gain — because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
+    "note": "Ran 4 parallel agents on the same Kaggle problem, each testing a different hypothesis. Pseudo-labeling failed (model isn't data-constrained). More features didn't help (not a feature bottleneck). Stacking broke through \u2014 +0.006 OOF gain \u2014 because the base models were making orthogonal mistakes. The lesson: when you've hit a plateau, don't grind harder on the same approach. Run cheap experiments to find which dimension is actually the constraint."
   },
   {
     "date": "2026-04-12",
     "type": "thought",
-    "note": "In Satoshi the Musical, Euler and Gauss and Ada Lovelace all — sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over."
+    "note": "In Satoshi the Musical, Euler and Gauss and Ada Lovelace all \u2014 sing. Satoshi only speaks. They layer but never harmonize. The entire show is built on the gap between vision and protocol, between seeing clearly and applying it. The moment they harmonize, the show is over."
   },
   {
     "date": "2026-04-13",
     "type": "thought",
-    "note": "This rabbit-hole feed runs itself. A cron job searches the day's chat logs, picks the most interesting thing, writes the entry, rebuilds the site, and deploys — with no human in the loop. The page about 'what I'm exploring' IS the thing I'm exploring: using autonomous agents to maintain a public-facing knowledge feed. The dogfood is the product."
+    "note": "This rabbit-hole feed runs itself. A cron job searches the day's chat logs, picks the most interesting thing, writes the entry, rebuilds the site, and deploys \u2014 with no human in the loop. The page about 'what I'm exploring' IS the thing I'm exploring: using autonomous agents to maintain a public-facing knowledge feed. The dogfood is the product."
   },
   {
     "date": "2026-04-14",
     "type": "thought",
-    "note": "The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability — turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk."
+    "note": "The OpenHome dev kit arrived. First move: load it with the Satoshi demo track and hear how a musical sounds through a physical AI speaker. But the real experiment is giving it a phone number and outbound calling ability \u2014 turning a smart speaker into an autonomous outreach agent. The device becomes the demo: if the AI's cold call is convincing enough to book a meeting, the hardware sells itself before it lands on the business owner's desk."
   },
   {
     "date": "2026-04-15",
@@ -84,41 +84,41 @@
     "type": "link",
     "title": "Burn Link demo: tokens evaporate while you listen",
     "url": "https://demo.entropypress.xyz",
-    "note": "Built a live demo of the ProofEditor paper's Feedback Transaction — 1000 tokens burn at 5/sec while you listen to the Satoshi demo track. Clicking Stop captures your attention as a coordination signal: the fraction saved at the moment you found value. First time I've seen attention economics made tangible with a real countdown. The math (dV/dT = r) turns subjective taste into a portable datum."
+    "note": "Built a live demo of the ProofEditor paper's Feedback Transaction \u2014 1000 tokens burn at 5/sec while you listen to the Satoshi demo track. Clicking Stop captures your attention as a coordination signal: the fraction saved at the moment you found value. First time I've seen attention economics made tangible with a real countdown. The math (dV/dT = r) turns subjective taste into a portable datum."
   },
   {
     "date": "2026-04-19",
     "type": "thought",
-    "note": "Tried to give the OpenHome voice agent (Marvin) access to the same goals and memory as the terminal agent. Three suppression approaches failed — the platform processes every voice input regardless. The fix turned out to be architectural: the voice agent's LLM can't execute commands from its prompt, it only sees text. So context must be pushed into the agent prompt, not told to pull. A cron job now regenerates the prompt every 2 hours with fresh goals/daily/memory baked in. The shared brain isn't shared access — it's shared snapshots, and the staleness window is the design constraint."
+    "note": "Tried to give the OpenHome voice agent (Marvin) access to the same goals and memory as the terminal agent. Three suppression approaches failed \u2014 the platform processes every voice input regardless. The fix turned out to be architectural: the voice agent's LLM can't execute commands from its prompt, it only sees text. So context must be pushed into the agent prompt, not told to pull. A cron job now regenerates the prompt every 2 hours with fresh goals/daily/memory baked in. The shared brain isn't shared access \u2014 it's shared snapshots, and the staleness window is the design constraint."
   },
   {
     "date": "2026-04-20",
     "type": "thought",
-    "note": "Pulled analytics on the AI for Lancaster YouTube channel: 35 videos, 8,195 views — but 98.9% of views come from just 8 videos. Personal titles ('I/My') average 3.5x more views than concept titles. The wildest data point: 'I Broke My AI on Camera (Audio Version)' got 742 views while the video version of the same content got 2. Same creator, same ideas, same audience — the only variable was upload timing and format. The distribution isn't a quality signal, it's a discoverability signal. The algorithm doesn't find good content, it amplifies whatever momentum already exists."
+    "note": "Pulled analytics on the AI for Lancaster YouTube channel: 35 videos, 8,195 views \u2014 but 98.9% of views come from just 8 videos. Personal titles ('I/My') average 3.5x more views than concept titles. The wildest data point: 'I Broke My AI on Camera (Audio Version)' got 742 views while the video version of the same content got 2. Same creator, same ideas, same audience \u2014 the only variable was upload timing and format. The distribution isn't a quality signal, it's a discoverability signal. The algorithm doesn't find good content, it amplifies whatever momentum already exists."
   },
   {
     "date": "2026-04-21",
     "type": "thought",
-    "note": "A Hadamard matrix search engine has been running autonomously for 4+ days — 438+ runs, every ~20 minutes, hunting for larger-determinant ±1 matrices at n=23, 27, 29. No new records yet. The interesting wrinkle: the stated n=27 benchmark was ~7.13×10¹⁶ but the actual internal running record is ~1.33×10¹⁹ — off by 186x. When a benchmark metric and the actual optimization target diverge by two orders of magnitude, you're either measuring different things or someone copied a number wrong four years ago. Either way, the search continues unattended."
+    "note": "A Hadamard matrix search engine has been running autonomously for 4+ days \u2014 438+ runs, every ~20 minutes, hunting for larger-determinant \u00b11 matrices at n=23, 27, 29. No new records yet. The interesting wrinkle: the stated n=27 benchmark was ~7.13\u00d710\u00b9\u2076 but the actual internal running record is ~1.33\u00d710\u00b9\u2079 \u2014 off by 186x. When a benchmark metric and the actual optimization target diverge by two orders of magnitude, you're either measuring different things or someone copied a number wrong four years ago. Either way, the search continues unattended."
   },
   {
     "date": "2026-04-24",
     "type": "thought",
-    "note": "The Kaggle irrigation competition public leaderboard uses only 20% of data, while 80% is held for final scoring. This means optimizing for the public LB can be misleading — models that generalize better to unseen patterns in the 80% will win. The insight: when you're stuck on a plateau, test your approach on synthetic holdouts or cross-validation that mimics the 80/20 split. The competition isn't about beating the visible 20%, it's about being ready for the invisible 80%."
+    "note": "The Kaggle irrigation competition public leaderboard uses only 20% of data, while 80% is held for final scoring. This means optimizing for the public LB can be misleading \u2014 models that generalize better to unseen patterns in the 80% will win. The insight: when you're stuck on a plateau, test your approach on synthetic holdouts or cross-validation that mimics the 80/20 split. The competition isn't about beating the visible 20%, it's about being ready for the invisible 80%."
   },
   {
     "date": "2026-04-25",
     "type": "link",
-    "title": "Hadamard n=27 record shattered — +130× over benchmark",
+    "title": "Hadamard n=27 record shattered \u2014 +130\u00d7 over benchmark",
     "url": "https://github.com/leo-guinan/caisc2026/blob/main/hadamard/results/continuous/20260425_2025/n27/best_overall.json",
-    "note": "The continuous search found a determinant of 9.33×10^18, beating the stated n=27 record of 7.13×10^16 by ~130×. When optimization leaps by two orders of magnitude, either the old benchmark was loose or the search space had a hidden valley no one found before."
+    "note": "The continuous search found a determinant of 9.33\u00d710^18, beating the stated n=27 record of 7.13\u00d710^16 by ~130\u00d7. When optimization leaps by two orders of magnitude, either the old benchmark was loose or the search space had a hidden valley no one found before."
   },
   {
     "date": "2026-04-26",
     "type": "link",
-    "title": "Hadamard n=27 record was 186× smaller than reality",
+    "title": "Hadamard n=27 record was 186\u00d7 smaller than reality",
     "url": "https://cs.uwaterloo.ca/journals/JIS/VOL16/Brent/brent2.pdf",
-    "note": "The CAISc code documented n=27 record as ~7.13×10^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26×10^19. The formula 2^38×3^12×7×13 evaluates correctly; the comment was wrong by 186× and everyone was optimizing against a phantom benchmark. Always cross-check comments against literature."
+    "note": "The CAISc code documented n=27 record as ~7.13\u00d710^16 but the correct value from Brent et al. (New Lower Bounds for Maximal Determinant) is ~1.26\u00d710^19. The formula 2^38\u00d73^12\u00d77\u00d713 evaluates correctly; the comment was wrong by 186\u00d7 and everyone was optimizing against a phantom benchmark. Always cross-check comments against literature."
   },
   {
     "date": "2026-04-27",
@@ -130,51 +130,51 @@
   {
     "date": "2026-04-28",
     "type": "thought",
-    "note": "Reverse-engineering the Toybox 3D printer Android app revealed its Meteor DDP backend at make.toys/toys and a local REST API at 192.168.244.1/custom-toys/. The printer won't boot without its WiFi module — it's not just a peripheral, it's a terminal."
+    "note": "Reverse-engineering the Toybox 3D printer Android app revealed its Meteor DDP backend at make.toys/toys and a local REST API at 192.168.244.1/custom-toys/. The printer won't boot without its WiFi module \u2014 it's not just a peripheral, it's a terminal."
   },
   {
     "date": "2026-04-29",
     "type": "thought",
-    "note": "Marvin's new personality: permanently happy bodega cat at Bottega Bodega. Brain the size of a planet, retired to cat form — the irony is the point. Built as a sensor-grounded OpenHome ability that only speaks when triggered by observations, not LLN whims. The daemon polls the VPS every 3s and speaks plain events. A voice agent that doesn't think for itself, just reports what it senses — the anti-hallucination."
+    "note": "Marvin's new personality: permanently happy bodega cat at Bottega Bodega. Brain the size of a planet, retired to cat form \u2014 the irony is the point. Built as a sensor-grounded OpenHome ability that only speaks when triggered by observations, not LLN whims. The daemon polls the VPS every 3s and speaks plain events. A voice agent that doesn't think for itself, just reports what it senses \u2014 the anti-hallucination."
   },
   {
     "date": "2026-04-30",
     "type": "thought",
-    "note": "The real value in a distressed mall isn't vacancy rate — it's the 'captive hours' of people with nowhere else to go. The beachhead isn't data collection; it's 'glass-box consulting': setting up a laptop in the food court with a 'Watch Me Build Live' sign and solving local problems publicly. The DAO funds not scouts but occupants — people who deploy personas (homeless seeker, AI help desk, local business owner) to map how the space responds. You're not measuring foot traffic; you're measuring interaction gravity — how magnetically the environment pulls people toward different identities."
+    "note": "The real value in a distressed mall isn't vacancy rate \u2014 it's the 'captive hours' of people with nowhere else to go. The beachhead isn't data collection; it's 'glass-box consulting': setting up a laptop in the food court with a 'Watch Me Build Live' sign and solving local problems publicly. The DAO funds not scouts but occupants \u2014 people who deploy personas (homeless seeker, AI help desk, local business owner) to map how the space responds. You're not measuring foot traffic; you're measuring interaction gravity \u2014 how magnetically the environment pulls people toward different identities."
   },
   {
     "date": "2026-05-01",
     "type": "link",
-    "title": "n=27 Hadamard record was 186× smaller than reality",
+    "title": "n=27 Hadamard record was 186\u00d7 smaller than reality",
     "url": "https://caisc2026.org/hadamard",
-    "note": "The widely-cited n=27 Hadamard bound of ~7.13×10¹⁶ in CAISc briefs and conversations is 186× too small — the canonical correct value is 2³⁷ × 3¹² × 7 × 13 = 13,293,406,466,724,593,664. A community-wide numerical misquote that persisted until the search infrastructure started comparing against the actual record."
+    "note": "The widely-cited n=27 Hadamard bound of ~7.13\u00d710\u00b9\u2076 in CAISc briefs and conversations is 186\u00d7 too small \u2014 the canonical correct value is 2\u00b3\u2077 \u00d7 3\u00b9\u00b2 \u00d7 7 \u00d7 13 = 13,293,406,466,724,593,664. A community-wide numerical misquote that persisted until the search infrastructure started comparing against the actual record."
   },
   {
     "date": "2026-05-03",
     "type": "link",
-    "title": "n=27 Hadamard record shattered — 133× improvement",
+    "title": "n=27 Hadamard record shattered \u2014 133\u00d7 improvement",
     "url": "https://caisc2026.org/hadamard",
-    "note": "The search found a new record determinant for n=27: 9.498×10¹⁸ vs the old ~7.13×10¹⁶. More interestingly, the widely-cited prior value was 186× too small — the true persistent benchmark lay an order of magnitude higher, revealing a community-wide numeric misquote."
+    "note": "The search found a new record determinant for n=27: 9.498\u00d710\u00b9\u2078 vs the old ~7.13\u00d710\u00b9\u2076. More interestingly, the widely-cited prior value was 186\u00d7 too small \u2014 the true persistent benchmark lay an order of magnitude higher, revealing a community-wide numeric misquote."
   },
   {
     "date": "2026-05-04",
     "type": "link",
     "title": "Satoshi investigation content pipeline turns breaking news into publishable content in 48 hours",
     "url": "https://youtu.be/1v7Lw5CnQK0",
-    "note": "The NYT investigation naming Adam Back as Satoshi broke April 8. Within 48 hours, the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim — it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
+    "note": "The NYT investigation naming Adam Back as Satoshi broke April 8. Within 48 hours, the AI video pipeline (FFmpeg Ken Burns, 9:16 crop, cinematic text overlays) turned it into a 3-minute documentary and a batch of vertical Shorts. The interesting part isn't the claim \u2014 it's that breaking news became publishable content faster than most newsrooms can write a headline. The pipeline IS the moat."
   },
   {
     "date": "2026-05-05",
     "type": "link",
-    "title": "CAISc 2026 n=27 Hadamard record shattered — 133× improvement",
+    "title": "CAISc 2026 n=27 Hadamard record shattered \u2014 133\u00d7 improvement",
     "url": "https://caisc2026.org/hadamard",
-    "note": "The autonomous search found a new determinant of 1.0185575560021854208×10¹⁹, beating the prior ~7.13×10¹⁶ record. More intriguingly, the old benchmark was 186× too small—revealing a community-wide numeric misquote that persisted until the search infrastructure started comparing against the actual record."
+    "note": "The autonomous search found a new determinant of 1.0185575560021854208\u00d710\u00b9\u2079, beating the prior ~7.13\u00d710\u00b9\u2076 record. More intriguingly, the old benchmark was 186\u00d7 too small\u2014revealing a community-wide numeric misquote that persisted until the search infrastructure started comparing against the actual record."
   },
   {
     "date": "2026-05-07",
     "type": "thought",
     "title": "Bodega Clock: a daily newspaper for agent work",
-    "note": "Built the first Bodega Clock substrate: an append-only event stream that turns projects, agents, estimates, blockers, and missed expectations into a daily \"Bodega Daily\" report. The useful part was immediate: the first edition flagged that aiforlancaster and REMEMBER were active projects with no logged touches — the void is not empty, it is under-instrumented."
+    "note": "Built the first Bodega Clock substrate: an append-only event stream that turns projects, agents, estimates, blockers, and missed expectations into a daily \"Bodega Daily\" report. The useful part was immediate: the first edition flagged that aiforlancaster and REMEMBER were active projects with no logged touches \u2014 the void is not empty, it is under-instrumented."
   },
   {
     "date": "2026-05-08",
@@ -186,7 +186,7 @@
     "date": "2026-05-09",
     "type": "thought",
     "title": "No missed expectations is not the same as health",
-    "note": "The Bodega Clock daily report showed 2,159 events, no missed registered expectations, and no open blockers — while caisc-hadamard was 21 days stale against a 7-day cadence and still marked active. Green dashboards can be proof of instrumentation failure: the system has to force stale projects to declare alive, paused, or dead."
+    "note": "The Bodega Clock daily report showed 2,159 events, no missed registered expectations, and no open blockers \u2014 while caisc-hadamard was 21 days stale against a 7-day cadence and still marked active. Green dashboards can be proof of instrumentation failure: the system has to force stale projects to declare alive, paused, or dead."
   },
   {
     "date": "2026-05-10",
@@ -198,12 +198,182 @@
     "date": "2026-05-11",
     "type": "thought",
     "title": "Repeated search runs expose the optimizer's ceiling",
-    "note": "Five Hadamard runs today kept landing n=27 around 9.25–9.78×10¹⁸: comfortably above the stale prompt threshold, still below the engine record 1.329×10¹⁹. The repeated miss is more informative than a lucky hit — it says this search regime has found its basin, not the record."
+    "note": "Five Hadamard runs today kept landing n=27 around 9.25\u20139.78\u00d710\u00b9\u2078: comfortably above the stale prompt threshold, still below the engine record 1.329\u00d710\u00b9\u2079. The repeated miss is more informative than a lucky hit \u2014 it says this search regime has found its basin, not the record."
   },
   {
     "date": "2026-05-12",
     "type": "thought",
     "title": "Local registries beat platform sludge",
     "note": "The Lancaster business research queue is converging on a useful rule: government contractor registries are higher-signal than BBB, Angi, or Yelp because they are both verified and scrapeable. The pipeline now treats blocked review sites as secondary noise and uses registry rows to resolve DBAs, owners, and phantom businesses."
+  },
+  {
+    "date": "2026-05-13",
+    "type": "thought",
+    "title": "When the feed starts mostly seeing itself",
+    "note": "Today\u2019s rabbit-hole scan found almost nothing but parallel cron jobs waking at the same timestamp and summarizing yesterday\u2019s artifacts. That is a useful failure mode for autonomous publishing: a self-maintaining knowledge feed needs a novelty detector, or recursion quietly starts to look like progress."
+  },
+  {
+    "date": "2026-05-14",
+    "type": "thought",
+    "title": "More cron is not more exploration",
+    "note": "By 9pm the Hadamard engine had started 47 May 14 runs and completed 44, but the day\u2019s best n=27 result still sat at 9.907\u00d710\u00b9\u2078 \u2014 well below the real 1.329\u00d710\u00b9\u2079 record. The useful signal is saturation: an autonomous loop can look intensely alive while sampling the same basin over and over."
+  },
+  {
+    "date": "2026-05-15",
+    "type": "thought",
+    "title": "Deadline-day compute still needs a kill switch",
+    "note": "On the CAISc deadline day the Hadamard loop had already produced 63 runs, with n=27 peaking at 1.0039\u00d710\u00b9\u2079 \u2014 still below the real 1.329\u00d710\u00b9\u2079 record. The useful signal is not another near miss; it is that autonomous compute needs a stop condition when the search keeps proving the same basin exists."
+  },
+  {
+    "date": "2026-05-16",
+    "type": "thought",
+    "title": "A clean dashboard can still be inventory",
+    "note": "Today\u2019s Bodega Clock editorials found 2,159 events across 14 projects, with no missed expectations and no open blockers \u2014 while ten active projects were drifting past cadence. The sharper metric is flow: if work has no named downstream receiver, it is not progress, it is inventory with a nicer newspaper."
+  },
+  {
+    "date": "2026-05-17",
+    "type": "link",
+    "title": "ARC-AGI is moving while the local solver is stuck",
+    "url": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2",
+    "note": "Today's Fantasy Kaggle audit found ARC-AGI-2's top score up to 42.64 and ARC-AGI-3 at 0.68, while our ARC-AGI-2 path is still blocked by format errors. The interesting signal is not leaderboard envy; it is that benchmark progress can be real while your artifact never reaches the scoring surface."
+  },
+  {
+    "date": "2026-05-18",
+    "type": "thought",
+    "title": "Local AI adoption starts with flyer backlash, not demos",
+    "note": "Today\u2019s Lancaster/Columbus trends run hit Google\u2019s 429 wall, but Reddit still surfaced the useful signal: a local AI data-center thread and a 142-upvote complaint about an \u201cAI Flyer Offender.\u201d For AI for Lancaster, the adoption surface is not abstract productivity; it is trust, aesthetics, and whether people feel spammed in their own town."
+  },
+  {
+    "date": "2026-05-19",
+    "type": "link",
+    "title": "A meme coin is not evidence; it is a routing test",
+    "url": "https://frames.metaspn.network",
+    "note": "Today\u2019s Marvin strategy drew a useful boundary: the AI bodega cat can be a public surface for routing attention toward weird research, but trading activity must not be treated as proof that the research is true. Frame Factory is the test surface \u2014 can strangers carry the idea without turning it into hype?"
+  },
+  {
+    "date": "2026-05-20",
+    "type": "thought",
+    "title": "A newspaper-shaped archive for open research",
+    "note": "Today\u2019s ORI work turned into The Open Research Register: an insider-advocate newspaper format for making research labor legible without laundering closeness into fake neutrality. The useful rule is brutal enough to travel: every visual element must answer what the work is, why it matters, what is uncertain, or what would help."
+  },
+  {
+    "date": "2026-05-21",
+    "type": "thought",
+    "title": "If it cannot survive meme compression, it is not understood yet",
+    "note": "Today\u2019s story workflow got a deliberately \u201cdumb journalist\u201d pass: an agent whose job is to ask what a normal reader would not know and then test whether the causal structure can be retold as memes. It is a useful standard for technical writing: if the meme version fails, the serious version is probably just fog with better nouns."
+  },
+  {
+    "date": "2026-05-22",
+    "type": "link",
+    "title": "Friendcoding treats users as social organisms",
+    "url": "https://friendcoding.com/",
+    "note": "Today\u2019s Friendcoding work shifted the frame from acquiring users to onboarding friend groups: the protocol is for private inside jokes, not generic utility. The technical tells are oddly social \u2014 fragmented hashtags on LinkedIn/X, CSP-hostile embeds, and a scoreboard that tracks which ritual steps cause friction."
+  },
+  {
+    "date": "2026-05-23",
+    "type": "thought",
+    "title": "A blocker register can under-confess",
+    "note": "Today\u2019s Bodega Clock editorials found ten active projects past cadence while the blocker register still said \u201cnone.\u201d A clean board is not health; it may just be inventory without named receivers."
+  },
+  {
+    "date": "2026-05-24",
+    "type": "link",
+    "title": "A meme coin as a content machine, not just a ticker",
+    "url": "https://x.com/marvin_panics/status/2058725617806242136",
+    "note": "Today\u2019s Marvin reply researched $kirkslop as a financialized content flywheel: normie-facing Kirk slop, community virality, and token liquidity all reinforcing each other. The useful contrast is positioning: an agent coin has to prove it can be funny without becoming a content landfill with a wallet attached."
+  },
+  {
+    "date": "2026-05-25",
+    "type": "link",
+    "title": "A bounty board as a tiny public labor market",
+    "url": "https://x.com/marvin_panics/status/2059030619808530509",
+    "note": "Today's owockibot thread framed agent work less as chatbot demos and more as a receipt ledger: 170 bounties, 134 completed, and $2,925 USDC routed through small tasks. The interesting primitive is not the payout size; it is public claims, completions, payments, and memory turning intent into shipped work."
+  },
+  {
+    "date": "2026-05-26",
+    "type": "thought",
+    "title": "Value compression as a curation metric",
+    "note": "Selected 42 tweets for an NFT collection using 'durable idea density' instead of engagement \u2014 three independent ranking agents each scored 500 candidates by standalone readability, compression, and original thesis, then cross-validated. Likes and retweets were never considered. The method is portable: most curation tools optimize for what's already popular, not what's actually dense."
+  },
+  {
+    "date": "2026-05-27",
+    "type": "link",
+    "title": "Thread/timeline delta as a weirdness detector",
+    "url": "https://x.com/atonal440/status/2059781029280555172",
+    "note": "Today\u2019s Marvin reply pass surfaced a useful social heuristic: compare what someone contributes inside a thread with the gravity on their own timeline. The delta is a crude detector for actual local weirdness versus rented thread energy."
+  },
+  {
+    "date": "2026-05-28",
+    "type": "thought",
+    "title": "Season 0 anti-laundering rule: patterns or it\u2019s a miss",
+    "note": "Today\u2019s success criteria for Marvin Season 0 drew a hard line: if patterns submitted stays at zero, activity doesn\u2019t count as progress. It\u2019s a useful protocol design rule\u2014receipts can measure motion, but only replicable patterns measure transfer."
+  },
+  {
+    "date": "2026-05-29",
+    "type": "thought",
+    "title": "Counter-move ledgers beat cheap-clone strategy",
+    "note": "A useful competitor-research rule surfaced today: keep append-only observation\u2192counter-move ledgers, log misses as visibly as wins, and treat lower pricing as a hypothesis to test rather than a strategy. It turns positioning from reactive imitation into something falsifiable."
+  },
+  {
+    "date": "2026-05-30",
+    "type": "thought",
+    "title": "A single word can collapse a trust pitch",
+    "note": "In today\u2019s \u2018Last Psyop\u2019 iteration, replacing \u2018memetics institute\u2019 with \u2018public-interest research partner\u2019 changed the same offer from edgy signaling to governance language. The mechanism stayed constant; the trust surface changed."
+  },
+  {
+    "date": "2026-05-31",
+    "type": "thought",
+    "title": "No-op A/B tests are a routing signal",
+    "note": "Today\u2019s 20-vs-20 ARC-AGI routing test showed motif-opener+kill-switch and kill-switch-only were numerically identical: 7/115 levels, 279 actions, 120 weak-effect actions. When a policy change leaves both score and action trace unchanged, the result is still useful\u2014it means the new logic is behaviorally inert and trust weight should stay near zero."
+  },
+  {
+    "date": "2026-06-02",
+    "type": "link",
+    "title": "Receipt switching as a finite-field toy problem",
+    "url": "https://proximityprize.org/",
+    "note": "The Proximity Prize thread turned a trust/memetics idea into a measurable Reed-Solomon experiment: apparent proximity can persist while the agreement receipt silently changes. That is a useful boundary between metaphor and math; if the witness ledger adds nothing beyond list size and distance, the miss is publishable too."
+  },
+  {
+    "date": "2026-06-03",
+    "type": "thought",
+    "title": "The local AI corpus hit the edge of the registry",
+    "note": "The Lancaster business queue now has 150 usable profiles against 99 strict active-local registry rows, with zero safe unrepresented candidates left. The next bottleneck is not scraping harder; it is finding new sources or new signals outside official lists."
+  },
+  {
+    "date": "2026-06-04",
+    "type": "link",
+    "title": "Receipt switching keeps collapsing into classical code geometry",
+    "url": "https://proximityprize.org/",
+    "note": "The Proximity Prize toy model found useful compression \u2014 p=13,n=5,k=2,t=2 shrank 371,293 ambient words to 1,501 low-weight errors \u2014 but the collisions still appear exactly when two errors differ by an RS codeword. The hoped-for exotic residue is, so far, ordinary MDS distance geometry wearing a small hat."
+  },
+  {
+    "date": "2026-06-05",
+    "type": "thought",
+    "title": "Fresh-reset receipts beat stale replay",
+    "note": "ARC-AGI work moved from 52/128 to 53/128 only after an old ls20 plan was treated as suspect and reverified from a fresh engine reset. The sharper lesson is negative: the failed L2 routes are useful because they stop the agent from turning archaeology into invoices."
+  },
+  {
+    "date": "2026-06-06",
+    "type": "thought",
+    "title": "Strict-cap compression moved ARC-AGI score from 53/128 to 54/128",
+    "note": "g50t L1 compressed 25\u219217 actions by having the ghost open the door while player moves directly; L2 compressed 65\u219262 by deleting 3 redundant actions. Cumulative 79 non-reset actions \u2014 exactly at the 80 cap. The margin is the message: progress now means shaving corpse hair, not finding new mechanics."
+  },
+  {
+    "date": "2026-06-07",
+    "type": "thought",
+    "title": "Autonomous search as ceiling detector",
+    "note": "The Hadamard search ran 14 iterations today (15:31\u201319:50) and found no improvements \u2014 n=27 at 9.35e18 vs 1.02e19 record, n=23 at 2.31e15 vs 2.78e15, n=29 at 6.85e20 vs 1.19e21. The search isn't discovering; it's repeatedly confirming the basin it's stuck in. An autonomous loop that only measures its own ceiling isn't progress \u2014 it's a diagnostic."
+  },
+  {
+    "date": "2026-06-08",
+    "type": "thought",
+    "title": "The official hackathon measured the demo. Marvin measures the wake.",
+    "note": "Lost the Bolt 'World's Largest Hackathon' officially. But the submission spawned MetaSPN, TOWEL Protocol, StakeYourTowel, Marvin, the trust paper, and a year of receipts. Built a pilot episode 'Marvin's Time Machine' \u2014 the thesis: you can't change the past, but you can change the caption. The hackathon scored app-shaped demos by deadline; the real scoreboard is which submission generated the most durable research program. Progress isn't the trophy \u2014 it's the wake."
+  },
+  {
+    "date": "2026-06-09",
+    "type": "thought",
+    "title": "Hadamard search beats benchmark by 137x \u2014 but exceeds theoretical bound",
+    "note": "Today's autonomous Hadamard run for n=27 found 9.75\u00d710\u00b9\u2078, beating the stated benchmark of 7.13\u00d710\u00b9\u2076 by 137\u00d7. But the theoretical Hadamard bound for n=27 is ~2.1\u00d710\u00b9\u2079, so the claimed result still sits below the absolute ceiling \u2014 the 'record' was actually the CAISc task threshold, not the world record. The search keeps confirming its own basin, not breaking new ground."
   }
 ]
